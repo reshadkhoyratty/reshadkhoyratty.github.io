@@ -1,6 +1,6 @@
 {
-    "name": "PWA Demo",
-    "short_name": "pwa_demo",
+    "name": "bloc_flutter",
+    "short_name": "bloc_flutter",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
@@ -8,7 +8,6 @@
     "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
-    
     "icons": [
         {
             "src": "icons/Icon-192.png",

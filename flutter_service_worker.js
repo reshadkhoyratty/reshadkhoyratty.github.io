@@ -3,37 +3,21 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "assets/AssetManifest.json": "801125fca546f506babac9af4ec061ba",
-"assets/FontManifest.json": "5a32d4310a6f5d9a6b651e75ba0d7372",
+  "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
+"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/fonts/MaterialIcons-Regular.otf": "e7069dfd19b331be16bed984668fe080",
-"assets/NOTICES": "9197f88180f0abbbee960c9d299be845",
+"assets/NOTICES": "7c9a382853bf1885c6fb81a8b50895c3",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-brands-400.ttf": "d1722d5cf2c7855862f68edb85e31f88",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-regular-400.ttf": "613e4cc1af0eb5148b8ce409ad35446d",
-"assets/packages/font_awesome_flutter/lib/fonts/fa-solid-900.ttf": "dd3c4233029270506ecc994d67785a37",
 "favicon.png": "5dcef449791fa27946b3d35ad8803796",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "icons/Icon-maskable-192.png": "c457ef57daa1d16f64b27b786ec2ea3c",
 "icons/Icon-maskable-512.png": "301a7604d45b3e739efc881eb04896ea",
-"index.html": "6bfecdd254877f8d413d2234c6ebb07d",
-"/": "6bfecdd254877f8d413d2234c6ebb07d",
-"main.dart.js": "c88a7551f31db07b705e53e852ff3b9c",
-"manifest.json": "aed23e43730a58346f99fa772244e6f7",
-"splashscreens/default.png": "802d2e2fa689935ab8b2a9889c138b25",
-"splashscreens/default_landscape.png": "7829f101fd36161e13708c203191adee",
-"splashscreens/ipadpro1_splash.png": "0acd6b00f7028a389a71c9d1264c7981",
-"splashscreens/ipadpro2_splash.png": "658f7ab821ebf1cc56ca750fb9ac6ed9",
-"splashscreens/ipadpro3_splash.png": "3112a6076239eee5ac2265cb1a5ece0e",
-"splashscreens/ipad_splash.png": "9cc94940aad8e1fd8ce70b4fd45788df",
-"splashscreens/iphone5_splash.png": "e23ec6779f62cfe6670040178a818420",
-"splashscreens/iphone6_splash.png": "0a45f68b382380b1f55ed5ae9c18280c",
-"splashscreens/iphoneplus_splash.png": "05b190c6a3ff7e3b767d959ecdf3d82e",
-"splashscreens/iphonexr_splash.png": "6ab66f3177916938cff28c28d383731f",
-"splashscreens/iphonexsmax_splash.png": "e6b2eb1f911c78719309af11325b38f6",
-"splashscreens/iphonex_splash.png": "e2bec2d4f98b2dad31364996942c58b0",
-"style.css": "9ecbd7f977f5e56bf981f46d2668ff07",
-"version.json": "7035d3390f60278edb94c04bcb783f95"
+"index.html": "7758d4d2938fd4843cbfbf8908092efe",
+"/": "7758d4d2938fd4843cbfbf8908092efe",
+"main.dart.js": "0876ff0084683db4a6da943867127768",
+"manifest.json": "fee0a9c2d185cba043faabe4acf6b6c3",
+"version.json": "837d3624d717a1d8fc86e7de6a48d80a"
 };
 
 // The application shell files that are downloaded before a service worker can
