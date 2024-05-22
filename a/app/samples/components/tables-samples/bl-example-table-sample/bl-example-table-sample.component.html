@@ -4,7 +4,7 @@
     <div [attr.testlabel]="'table_with_top_filter'" class="container-fluid">
       <h4 class="mt-2" [attr.testlabel]="'table_top_filter_title'">{{'sample.datatable.horizontalLayout' | translate}}</h4>
 
-        <bl-table #table [compareObject]="compareObject" [showCellsToolTip]="true"
+        <bl-table #table [compareObject]="compareObject" [showCellsToolTip]="false"
                   [config]="config2" [filterGroup]="formGroup"
                   [showSearchField]="showSearchField" [verticalLayout]="false" id="bl-example-table-sample2" [testLabelValue]="'table-example-2'">
           <bl-table-filter (searchEvent)="searchEvent(table)"

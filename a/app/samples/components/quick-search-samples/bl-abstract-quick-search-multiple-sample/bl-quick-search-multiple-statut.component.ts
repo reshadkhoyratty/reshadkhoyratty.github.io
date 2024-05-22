@@ -4,8 +4,8 @@ import {
   BlAutoAbstractComponent,
   BlBasicObject,
   BlCalloutObject,
-  BlDataTableFilters,
-  BlTableColumn, CalloutClassEnum
+  BlDataTableFilters, BlQuicksearchFooterButton,
+  BlTableColumn, CalloutClassEnum, IconClassEnum
 } from '@esedit-md/shared-ui';
 import {TranslateService} from '@ngx-translate/core';
 import {StaticBddService} from '../../../../services/static-bdd.service';
@@ -55,6 +55,8 @@ export class BlQuickSearchMultipleStatutComponent extends BlQuickSearchMultipleA
 
   @ViewChild(BlAutoAbstractComponent) autoAbstractComponent: BlAutoAbstractComponent;
   @ViewChild(BlQuickSearchMultipleAbstractComponent, {static: false}) blQuickSearchMultipleAbstractComponent: BlQuickSearchMultipleAbstractComponent;
+   cancelButton : BlQuicksearchFooterButton;
+    validateButton: BlQuicksearchFooterButton;
 
   columns: BlTableColumn[] = [
     {
@@ -80,7 +82,20 @@ export class BlQuickSearchMultipleStatutComponent extends BlQuickSearchMultipleA
     super(translateService, dialog, cdr);
     this.id = 'quicksearchmultipleStatut';
 
+    this.cancelButton =  {
+      butonName:'Fermer',
+      withIcon:true,
+      tooltip:'tooltip ',
+      iconClassName:IconClassEnum.cancel_circle
 
+    }
+    this.validateButton =  {
+      butonName:'Enregistrer',
+      withIcon:true,
+      tooltip:'tooltip ',
+      iconClassName:IconClassEnum.save
+
+    }
   }
 
   public override ngOnInit(): void {

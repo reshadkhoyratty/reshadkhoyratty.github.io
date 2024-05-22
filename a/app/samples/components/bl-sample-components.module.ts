@@ -135,6 +135,9 @@ import {BlTextFieldSampleComponent} from './bl-text-field-sample/bl-text-field-s
 import {BlTreeSampleComponent} from './bl-tree-sample/bl-tree-sample.component';
 import {BlWorkflowSampleComponent} from './bl-workflow-sample/bl-workflow-sample.component';
 import {BlTableSamplesModule} from './tables-samples/bl-tables-samples.module';
+import {
+  BlDialogContentComponent
+} from './quick-search-samples/bl-abstract-quick-search-multiple-sample/bl-dialog-content.component';
 
 const SAMPLE_COMPONENTS = [
     BlAbstractAutocompleteSampleComponent,
@@ -166,6 +169,7 @@ const SAMPLE_COMPONENTS = [
     BlNavCardDialogSampleComponent,
     BlTableFilterSampleComponent,
     BlSlideToggleSampleComponent,
+    BlDialogContentComponent,
     BlHyperlinkSampleComponent,
     BlMultiAttachmentSampleComponent,
     BlStepperSampleComponent,

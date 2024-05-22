@@ -1,0 +1,33 @@
+<h5>Recherche rapide avec boîte de dialogue dynamique</h5>
+<p>La recherche rapide multiple permet de passer une boîte de dialogue en tant qu'entrée : <strong>dialogComponent</strong>.</p>
+<p>À partir de là, il est possible de personnaliser des boîtes de dialogue par écran.</p>
+<p>L'exemple démontrera l'utilisation de la recherche rapide multiple avec une boîte de dialogue contenant :</p>
+<ul>
+  <li>- Une liste de callouts</li>
+  <li>- Un filtre Haut</li>
+  <li>- Un tableau</li>
+</ul>
+<form [formGroup]="formGroup">
+<bl-quick-search-multiple-templateMode
+  [formControl]="formGroup.controls.templateExample"
+  id="templateRef"
+  [testLabelValue]="'quick-search-multiple_dynamic_dialog'"
+
+
+
+></bl-quick-search-multiple-templateMode>
+
+  <h5>Les Classes prédéfinies :</h5>
+  <h6>.modal-quicksearch-container</h6>
+  <p>Utilisée afin d'englober votre dialogue et afficher le contenu sous forme de header, body, et footer.</p>
+  <h6>.header-quick-search</h6>
+  <p>Permet d'afficher un titre et un bouton avec un style flex.</p>
+  <h6>.body-quick-search</h6>
+  <p>Passez le contenu au sein de cette div afin d'avoir une hauteur de 80% et une largeur de 100% pour activer le scroll.</p>
+  <h6>.footer-quick-search</h6>
+  <p>Généralement utilisée pour les boutons d'action au niveau du footer du dialogue.</p>
+
+  <h5>Workflow:</h5>
+  <img style="margin: 30px" [src]="image.getSource()" [alt]="image.getAlt()" width="180%">
+
+</form>

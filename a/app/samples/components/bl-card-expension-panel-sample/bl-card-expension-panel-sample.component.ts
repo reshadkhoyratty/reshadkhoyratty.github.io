@@ -27,10 +27,10 @@ export class BlCardExpensionPanelSampleComponent {
   };
   constructor(translateService: TranslateService) {
     this.title = translateService.instant(
-      'pages.variables.card-expansion-panel.libelle'
+      'pages.variables.bl-expension-panel.libelle'
     );
     this.description = translateService.instant(
-      'pages.variables.card-expansion-panel.content'
+      'pages.variables.bl-expension-panel.content'
     );
   }
 

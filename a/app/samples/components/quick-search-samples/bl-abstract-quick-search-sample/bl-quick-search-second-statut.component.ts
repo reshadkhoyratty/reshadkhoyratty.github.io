@@ -20,6 +20,9 @@ import {
     BlTableSource, IconClassEnum
 } from '@esedit-md/shared-ui';
 import {TranslateService} from '@ngx-translate/core';
+import {
+    BlQuicksearchFooterButton
+} from '../../../../../../../../libs/shared-ui/src/lib/models/bl-quicksearch-footer.model';
 import {StaticBddService} from '../../../../services/static-bdd.service';
 import {MatDialog, MatDialogConfig} from '@angular/material/dialog';
 import {
@@ -59,7 +62,7 @@ import {BlQuickSearchStatutComponent} from './bl-quick-search-statut.component';
                                   [callOutBodyComponents]="callOutBodyComponents"
                                   [templateMode]="true"
                                   [customBody]="customBody"
-
+                                    [dialogCancelButton]="cancelButton"
         >
             <ng-template #customBody>
                 <bl-table #table [compareObject]="compareObject"
@@ -114,6 +117,7 @@ export class BlQuickSearchSecondStatutComponent extends BlQuickSearchAbstractCom
     public compareObject: ((a: any, b: any) => boolean) | undefined | null;
     public customComparing = false;
     public showSearchField = true;
+    public cancelButton : BlQuicksearchFooterButton;
     filterComponentsConfig: BlComponentConfig[] = [];
 
     private datasource2: MatTableDataSource<any>;
@@ -154,6 +158,14 @@ export class BlQuickSearchSecondStatutComponent extends BlQuickSearchAbstractCom
         this.initConfigTable();
 
         this.initData(this.config, this.datasource2);
+
+      this.cancelButton =  {
+        butonName:'Fermer',
+        withIcon:true,
+        tooltip:'tooltip ',
+        iconClassName:IconClassEnum.cancel_circle
+
+      }
     }
 
     initConfigTable() {
@@ -165,6 +177,7 @@ export class BlQuickSearchSecondStatutComponent extends BlQuickSearchAbstractCom
                     columnAction: true, // right to have action column
                      selectAll: true, //-- right to select all the row of the display page
                     search: true, //-- right to have rapid search
+
                 }
             },
 
@@ -220,7 +233,7 @@ export class BlQuickSearchSecondStatutComponent extends BlQuickSearchAbstractCom
          this.rowClickEvent.subscribe((x) => {
             if (this.blQuickSearchAbstractComponent && this.blQuickSearchAbstractComponent.dialogRef) {
 
-                let value:BlBasicObject = {id: x.id, code: x.nom, label: x.nom};
+                const value:BlBasicObject = {id: x.id, code: x.nom, label: x.nom};
                  this.blQuickSearchAbstractComponent.dialogRef.close(value);
             }
         });
@@ -250,9 +263,6 @@ export class BlQuickSearchSecondStatutComponent extends BlQuickSearchAbstractCom
         this.showSearchField = !this.showSearchField;
         this.changeDetectorRef.detectChanges();
     }
-
-
-
      search(table: BlTableComponent) {
         const dataTableFilters = table.getDataTableFilter();
         if (!dataTableFilters.paginatorValues && this.config?.data?.pageSizeOption) {

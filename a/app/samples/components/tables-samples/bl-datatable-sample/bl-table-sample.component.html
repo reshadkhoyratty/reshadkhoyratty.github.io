@@ -12,6 +12,7 @@
   <bl-table
     [tableTitle]="'sample.datatable.titleTableWithClass'|translate "
     [titleClass]="titleClass"
+    [showCellsToolTip]="true"
     [config]="config" [isLoading]="isLoading" [testLabelValue]="'table-example-1'"
             class="bl-table-prent-width">
         <bl-table-filter (searchEvent)="refreshAllTable()"

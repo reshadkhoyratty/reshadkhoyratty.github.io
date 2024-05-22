@@ -4,11 +4,13 @@ import {BlBasicObject, BlCalloutObject, CalloutClassEnum} from '@esedit-md/share
 import {StaticBddService} from '../../../../services/static-bdd.service';
 import {SampleAbstractComponent} from '../../../SampleAbstractComponent';
 import {BlQuickSearchMultipleStatutComponent} from "./bl-quick-search-multiple-statut.component";
+import {BlQuickSearchMultipleTemplateModeComponent} from './bl-quick-search-multiple-templateMode.component';
 
 type BlAbstractQuickSearchFormGroup = {
   status1: BlBasicObject[] | null,
   status2: BlBasicObject[] | null,
-  status3: BlBasicObject[] | null
+  status3: BlBasicObject[] | null,
+  templateExample: BlBasicObject[] |null
 }
 
 @Component({
@@ -18,6 +20,8 @@ type BlAbstractQuickSearchFormGroup = {
 export class BlAbstractQuickSearchMultipleSampleComponent extends SampleAbstractComponent<BlAbstractQuickSearchFormGroup> implements OnInit {
 
   @ViewChild(BlQuickSearchMultipleStatutComponent) quickSearchStatutComponent: BlQuickSearchMultipleStatutComponent;
+  @ViewChild(BlQuickSearchMultipleStatutComponent) quickSearchTemplateComponent: BlQuickSearchMultipleTemplateModeComponent;
+
   callOuts: BlCalloutObject[]= [];
 
   constructor(private staticBddService: StaticBddService) {
@@ -28,7 +32,8 @@ export class BlAbstractQuickSearchMultipleSampleComponent extends SampleAbstract
     this.formGroup = new FormGroup({
         status1: new FormControl<BlBasicObject[] | null>([this.staticBddService.getStatus(1), this.staticBddService.getStatus(3)]),
         status2: new FormControl<BlBasicObject[] | null>([this.staticBddService.getStatus(1)]),
-        status3: new FormControl<BlBasicObject[] | null>([this.staticBddService.getStatus(3)])
+        status3: new FormControl<BlBasicObject[] | null>([this.staticBddService.getStatus(3)]),
+      templateExample: new FormControl<BlBasicObject[] | null>([this.staticBddService.getStatus(4)]),
       }
     );
     this.callOuts = [

@@ -7,6 +7,9 @@ import {
   customActionSearch,
   IconClassEnum
 } from '@esedit-md/shared-ui';
+import {
+  BlQuicksearchFooterButton
+} from '../../../../../../../../libs/shared-ui/src/lib/models/bl-quicksearch-footer.model';
 import {BlQuickSearchSecondStatutComponent} from './bl-quick-search-second-statut.component';
 import {BlQuickSearchStatutComponent} from './bl-quick-search-statut.component';
 import {ToasterService} from "@bl/shared";
@@ -33,7 +36,7 @@ export class BlAbstractQuickSearchSampleComponent extends SampleAbstractComponen
   @ViewChild(BlQuickSearchStatutComponent) quickSearchStatutComponent: BlQuickSearchStatutComponent;
   @ViewChild(BlQuickSearchSecondStatutComponent) quickSearchStatutComponent2: BlQuickSearchSecondStatutComponent;
   public addFavoritAction : customActionSearch;
-
+  cancelButton : BlQuicksearchFooterButton;
   constructor(private translateService: TranslateService,private staticBddService: StaticBddService,public toasterService: ToasterService) {
     super();
   }
@@ -69,6 +72,12 @@ export class BlAbstractQuickSearchSampleComponent extends SampleAbstractComponen
       icon: IconClassEnum.heart_fill,
       testLabel: "action_ajout_favorit"
     };
+    this.cancelButton =  {
+      butonName:'Fermer',
+      withIcon:true,
+      tooltip:'tooltip ',
+      iconClassName:IconClassEnum.warn_triange_fill
+    }
   }
 
   addToFavorit(value:any) {

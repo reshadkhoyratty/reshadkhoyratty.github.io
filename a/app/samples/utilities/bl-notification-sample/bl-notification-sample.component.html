@@ -1,3 +1,4 @@
+
 <bl-notification
         (consultItemEvent)="consultItem($event)"
         (deleteAll)="deleteAll($event)"
@@ -12,5 +13,8 @@
         [pageSize]="pageSize"
         [testLabelValue] = "'notification'"
         [enableConsultation]="true"
+        [displayMode]="NotifDisplayMode.large"
+        [iconClassName]="'ph-bell-light'"
         >
 </bl-notification>
+

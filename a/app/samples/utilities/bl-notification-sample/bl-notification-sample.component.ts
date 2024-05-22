@@ -1,15 +1,18 @@
 import {Component} from '@angular/core';
 import {PageEvent} from '@angular/material/paginator';
 import {ToasterService} from '@bl/shared';
-import {NotificationItem} from '@esedit-md/shared-ui';
+import {NotifDisplayMode, NotificationItem} from '@esedit-md/shared-ui';
 import {StaticBddService} from '../../../services/static-bdd.service';
 
 @Component({
     selector: 'bl-notification-sample',
     templateUrl: './bl-notification-sample.component.html',
+    styleUrls: ['./bl-notification-sample.component.scss'],
 })
 export class BlNotificationSampleComponent {
     public dataSource: NotificationItem[] = [];
+    public dataSourceDeletable: NotificationItem[] = [];
+
     public count = 0;
     public pageIndex = 0;
     public pageSize = 10;
@@ -18,15 +21,17 @@ export class BlNotificationSampleComponent {
         public BddService: StaticBddService,
         private toasterService: ToasterService)
     {
-        this.BddService.initListNotification();
+        this.BddService.initListNotification(false);
         this.refreshData();
     }
 
     consultItem(notificationItem: NotificationItem) {
-        this.toasterService.success("Consultation: "+notificationItem.description)
+        this.toasterService.success("Consultation: "+ notificationItem.description)
     }
 
     deleteNotificationItem(notificationItem: NotificationItem) {
+      this.toasterService.warning("Suppression: "+ notificationItem.title)
+
         this.BddService.deleteNotificationItem(notificationItem);
         this.refreshData();
     }
@@ -59,4 +64,6 @@ export class BlNotificationSampleComponent {
         }
         this.dataSource = this.BddService.getListNotificationItem(this.pageIndex, this.pageSize);
     }
+
+  protected readonly NotifDisplayMode = NotifDisplayMode;
 }

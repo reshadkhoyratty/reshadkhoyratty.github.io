@@ -1,0 +1,64 @@
+<div class="m-4">
+  <h4 class="bl-zt-h4">{{'pages.style.notification-modal.exemple1'|translate}}</h4>
+  <div class="border-card">
+    <bl-notification-modal
+      [dataSource]="dataSource1"
+      (consultItemEvent)="consultItem($event)"
+      (deleteNotification)="deleteNotificationItem1($event)"
+      (readNotification)="readNotificationItem1($event)"
+      (refresh)="refresh($event, 1)"
+      (deleteAll)="deleteAllnotifs1($event)"
+      [showDeleteAllButton]="true"
+      (unreadNotification)="unreadNotificationItem1($event)"
+      [componentName]="'Notifications'"
+      [pageSize]="pageSize2"
+      [testLabelValue] = "'notification-modal'"
+    >
+    </bl-notification-modal>
+</div>
+</div>
+<div class="m-4">
+ <h4 class="bl-zt-h4">{{'pages.style.notification-modal.customHeader'|translate}}</h4>
+  <div  class="border-card">
+  <bl-notification-modal
+    [dataSource]="dataSource2"
+    (consultItemEvent)="consultItem($event)"
+    (deleteNotification)="deleteNotificationItem2($event)"
+    (readNotification)="readNotificationItem2($event)"
+    [pageSize]="pageSize1"
+    (refresh)="refresh($event,2)"
+    (unreadNotification)="unreadNotificationItem2($event)"
+    [showDeleteAllButton]="false"
+    [componentName]="'Mes Tâches'"
+    [testLabelValue] = "'notification-modal'"
+  >
+    <!-- custom header right -->
+    <div (click)="clickMenu($event)" class="col">
+      <bl-vertical-menu [listAction]="actionsHeader" [small]="true" [testLabelValue]="'vertical_Menu1'"></bl-vertical-menu>
+
+    </div>
+  </bl-notification-modal>
+  </div>
+
+
+  <div class="mt-3 border-card">
+    <bl-notification-modal
+      [dataSource]="dataSource3"
+      (consultItemEvent)="consultItem($event)"
+      (deleteNotification)="deleteNotificationItem3($event)"
+      (readNotification)="readNotificationItem3($event)"
+      (refresh)="refresh($event,3)"
+      (unreadNotification)="unreadNotificationItem3($event)"
+      [componentName]="'Notifications'"
+      [pageSize]="pageSize2"
+      [testLabelValue] = "'notification-modal'"
+    >
+      <!-- custom header right -->
+      <div (click)="clickMenu($event)" class="col">
+        <bl-button (click)=" navigateNotifPage(dataSource3)" [id]="'btnValidate'"
+                   [testLabelValue]="'seeAll_notifications_button'" [title]="'notification.button.seeAll'"
+        ></bl-button>
+      </div>
+    </bl-notification-modal>
+  </div>
+</div>

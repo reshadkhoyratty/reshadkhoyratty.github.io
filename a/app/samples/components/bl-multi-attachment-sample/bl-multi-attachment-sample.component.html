@@ -23,7 +23,7 @@
     <form
       (ngSubmit)="onSubmitMultiList()"
       [formGroup]="formGroup"
-      class="align-items-center"
+      class="align-items-center form"
     >
       <bl-multi-attachment
         (openFileFunc)="openFile($event)"
@@ -35,18 +35,9 @@
         [removable]="true"
         [required]="true"
         [testLabelValue]="'multi-attachment1'"
+        class="bl-multi-attachment"
       >
       </bl-multi-attachment>
-
-      <div class="validate-button">
-        <bl-button
-          [disabled]="formGroup.invalid"
-          [primary]="true"
-          [testLabelValue]="'validate'"
-          title="{{ 'sample.button.validate' | translate }}"
-          type="submit"
-        ></bl-button>
-      </div>
     </form>
   </div>
   <!-- COSTUMIZED ERROR MESSAGE EXEMPLE-->
@@ -55,7 +46,6 @@
       <p> {{'sample.multi-attachment.doc.costumMsgErrors' | translate}}
         <code> [costumMsgErrors]="true"</code>
       </p>
-
     <form
       (ngSubmit)="onSubmitMultiList()"
       [formGroup]="formGroup"
@@ -74,9 +64,9 @@
         >
         </bl-multi-attachment>
          <!-- CUSTOMIZED ERRORS -->
-        <ng-container *ngIf=" !formGroup2.pristine && formGroup2.controls.attachmentsList.errors">
-          <div style="margin-top: 1.5em;">
-            <bl-error
+        <ng-container *ngIf=" !formGroup2.pristine && formGroup2.controls.attachmentsList.errors ">
+          <div style="margin-top: 1.5em;" class="container-error-attachment">
+            <bl-error class="bl-error"
                 [visible]="formGroup2.controls.attachmentsList.hasError('required')"
                 [testLabel]="'error_required'"
                 [key]="'sample.multi-attachment.required-error'"
@@ -95,16 +85,6 @@
             ></bl-error>
           </div>
         </ng-container>
-      </div>
-
-      <div class="validate-button">
-        <bl-button
-          [disabled]="formGroup.invalid"
-          [primary]="true"
-          [testLabelValue]="'validate'"
-          title="{{ 'sample.button.validate' | translate }}"
-          type="submit"
-        ></bl-button>
       </div>
     </form>
   </div>

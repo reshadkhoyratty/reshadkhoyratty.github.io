@@ -20,104 +20,101 @@
       "bubbleIcon": "Bulle avec icône"
     },
     "components": "Composants",
-    "component":{
-        "overview": "Aperçu des composants",
-        "expension-panel":"Accordéon",
-        "tree": "Arbre",
-        "auto-complete": "Auto complétion [Abstrait]",
-        "action-banner":"Bandeau d'actions",
-        "marketing-panel" : "Bandeau marketing",
-        "dialog": "Boîte de dialogue",
-        "generic-dialog": " Boîte de dialogue génerique",
-        "buttons-submenu":"Boutons",
-        "buttons": {
-          "button": "Bouton",
-          "fab-menu": "Bouton flottant avec menu",
-          "button-link": "Bouton lien",
-          "vertical-menu": "Bouton picto avec menu",
-          "split-button": "Bouton text avec menu",
-          "transvers-menu":"Bouton menu transverse"
-
-        },
-        "radio-button":"Bouton radio",
-        "callout": "Message de rappel",
-        "card": "Carte",
-        "nav-card": "Carte de navigation",
-        "card-expension-panel":"Carte + expansion",
-        "checkbox":"Case à cocher",
-        "decimal":"Champ décimal",
-        "fraction": "Champ fraction",
-        "text-field": "Champ texte",
-        "comment-area": "Champ commentaire",
-        "chips": "Chips",
-        "counter":"Compteur",
-        "color-picker": "Sélecteur de couleur",
-        "icon-picker": "Sélecteur d'icône",
-        "image-picker": "Sélecteur d'image",
-
-        "date-time-submenu": "Date et heure",
-        "date-time": {
-          "calendar": "Calendrier",
-          "date-picker": "Champ date",
-          "date-picker-range": "Champ date avec plage",
-          "period": "Champ période",
-          "year-picker": "Champ année",
-          "hour-picker":"Champ heure"
-        },
-       "rich-text-editor": "Editeur de texte enrichi",
-        "no-data":"Etat vide",
-        "bread-crumb":"File d'ariane",
-        "filter":"Filtre",
-        "slide-toggle": "Interrupteur",
-        "horizontal-gauge":"Jauge horizontale",
-        "radial-gauge":"Jauge radiale",
-        "labels":"Labels",
-        "hyperlink":"Lien hypertexte",
-        "list":"Listes",
-        "editable-list":"Liste éditable",
-        "select-submenu":"Listes déroulantes",
-        "selects": {
-          "simple-select": "Liste déroulante",
-          "listbox-abstract": "Liste métier [Abstrait]",
-          "multicombo-abstract": "Liste à choix multiples [Abstrait]",
-          "multicombo-search": "Liste recherche à choix multiples [Abstrait]",
-          "search-abstract": "Liste avec recherche [Abstrait]"
-        },
-        "dashboard-list": "Liste Tableau de bord",
-        "memo": "Mémo",
-        "tab-group":"Onglets",
-        "attachment":"Pièce Jointe",
-        "multi-attachment":"Pièces Jointe Multiple",
-        "quick-search": "Recherche rapide",
-        "quick-search-abstract" : {
-          "quick-search-simple": "Recherche rapide [Abstrait]",
-          "quick-search-multiple": "Recherche rapide multiple [Abstrait]"
-        },
-        "shortcut": "Raccourcis internes",
-        "snackbar": "Message Toast",
-        "divider": "Séparateur",
-        "stepper" : "Étapes",
-        "task": "Tâche",
-        "tables": "Tableaux",
-        "table": {
-          "generator": "Générateur",
-          "example-with-upper-filter": "Exemple avec filtre en haut",
-          "example-with-side-filter": "Exemple avec filtre à droite",
-          "doc": "Documentation",
-          "markedFor": "Table avec Actions marquées"
-        },
-        "workflow": "Flux de travail"
-
+    "component": {
+      "overview": "Aperçu des composants",
+      "expension-panel": "Accordéon",
+      "tree": "Arbre",
+      "auto-complete": "Auto complétion [Abstrait]",
+      "action-banner": "Bandeau d'actions",
+      "marketing-panel": "Bandeau marketing",
+      "dialog": "Boîte de dialogue",
+      "generic-dialog": " Boîte de dialogue génerique",
+      "buttons-submenu": "Boutons",
+      "buttons": {
+        "button": "Bouton",
+        "fab-menu": "Bouton flottant avec menu",
+        "button-link": "Bouton lien",
+        "vertical-menu": "Bouton picto avec menu",
+        "split-button": "Bouton text avec menu",
+        "transvers-menu": "Bouton menu transverse"
+      },
+      "radio-button": "Bouton radio",
+      "callout": "Message de rappel",
+      "card": "Carte",
+      "nav-card": "Carte de navigation",
+      "card-expension-panel": "Carte + expansion",
+      "checkbox": "Case à cocher",
+      "decimal": "Champ décimal",
+      "fraction": "Champ fraction",
+      "text-field": "Champ texte",
+      "comment-area": "Champ commentaire",
+      "chips": "Chips",
+      "counter": "Compteur",
+      "color-picker": "Sélecteur de couleur",
+      "icon-picker": "Sélecteur d'icône",
+      "image-picker": "Sélecteur d'image",
+      "date-time-submenu": "Date et heure",
+      "date-time": {
+        "calendar": "Calendrier",
+        "date-picker": "Champ date",
+        "date-picker-range": "Champ date avec plage",
+        "period": "Champ période",
+        "year-picker": "Champ année",
+        "hour-picker": "Champ heure"
+      },
+      "rich-text-editor": "Editeur de texte enrichi",
+      "no-data": "Etat vide",
+      "bread-crumb": "File d'ariane",
+      "filter": "Filtre",
+      "slide-toggle": "Interrupteur",
+      "horizontal-gauge": "Jauge horizontale",
+      "radial-gauge": "Jauge radiale",
+      "labels": "Labels",
+      "hyperlink": "Lien hypertexte",
+      "list": "Listes",
+      "editable-list": "Liste éditable",
+      "select-submenu": "Listes déroulantes",
+      "selects": {
+        "simple-select": "Liste déroulante",
+        "listbox-abstract": "Liste métier [Abstrait]",
+        "multicombo-abstract": "Liste à choix multiples [Abstrait]",
+        "multicombo-search": "Liste recherche à choix multiples [Abstrait]",
+        "search-abstract": "Liste avec recherche [Abstrait]"
+      },
+      "dashboard-list": "Liste Tableau de bord",
+      "memo": "Mémo",
+      "tab-group": "Onglets",
+      "attachment": "Pièce Jointe",
+      "multi-attachment": "Pièces Jointe Multiple",
+      "quick-search": "Recherche rapide",
+      "quick-search-abstract": {
+        "quick-search-simple": "Recherche rapide [Abstrait]",
+        "quick-search-multiple": "Recherche rapide multiple [Abstrait]",
+        "quick-search-dynamic": "Recherche Rapide Dialog Dynamique [Abstrait]"
+      },
+      "shortcut": "Raccourcis internes",
+      "snackbar": "Message Toast",
+      "divider": "Séparateur",
+      "stepper": "Étapes",
+      "task": "Tâche",
+      "tables": "Tableaux",
+      "table": {
+        "generator": "Générateur",
+        "example-with-upper-filter": "Exemple avec filtre en haut",
+        "example-with-side-filter": "Exemple avec filtre à droite",
+        "doc": "Documentation",
+        "markedFor": "Table avec Actions marquées"
+      },
+      "workflow": "Flux de travail"
     },
     "utilities": "Utilitaires",
     "utility": {
-
       "i18n": "Internationalisation",
       "form-error": "Erreurs de formulaire",
       "notification": "Notification",
+      "notification-modal": "Notification modale",
       "shortcut": "Raccourcis internes",
       "close-alert": "Alerte fermeture",
-
       "sticky-header": "Sticky Header"
     },
     "layout_templates": "Modèles",
@@ -128,7 +125,6 @@
       "tables": "Tableaux",
       "simpleTable": "Tableau simple",
       "accesibility": "Accessibilité"
-
     },
     "forms": "Formulaires",
     "formExamples": {
@@ -215,7 +211,6 @@
       "title2": "Formulaire group 2",
       "title3": "Formulaire group 3",
       "title4": "Formulaire group 4",
-
       "valid": "Formulaire valide",
       "disabled": "Formulaire disabled",
       "error": "Erreur de formulaire",
@@ -242,19 +237,18 @@
     "icon-picker": {
       "description": "Le sélecteur d'icône est un composant permettant de sélectionner une icône dans une liste donnée. Il peut être utilisé pour la personnalisation d'un composant par le client (ex: raccourci externe) ou par l'utilisateur selon les besoins projets. <br> \n Les icônes visibles dans la liste proviennent de phosphoricons en version light."
     },
-    "color-picker":{
+    "color-picker": {
       "description": "Deux composants sont proposés comme sélecteur de couleur, le premier composant <code>bl-color-picker</code> permet de sélectionner une couleur dans une roue chromatique , et le deuxième composant <code>bl-color-circles</code> permet de choisir une couleur dans une palettes de couleurs prédéfinies.",
-
       "input": {
-        "color":"La couleur initiale à affichée, par défaut #FFFFFF",
-        "circles":{
-          "colors":"La liste des couleurs à affichés dans le sélecteur de couleurs en cercles. Liste de listes : string[][]"
+        "color": "La couleur initiale à affichée, par défaut #FFFFFF",
+        "circles": {
+          "colors": "La liste des couleurs à affichés dans le sélecteur de couleurs en cercles. Liste de listes : string[][]"
         }
       },
-      "output":{
-        "onColorChanged" :"Optionnel. Evenement déclanché à chaque fois un changement de couleur est effectué.",
-        "onChangeCompleted":"Optionel. Evenement déclanché une fois le choix de couleur est finalisé.",
-        "formControl":"Le FormControl contenant la valeur du champ sélecteur de couleur"
+      "output": {
+        "onColorChanged": "Optionnel. Evenement déclanché à chaque fois un changement de couleur est effectué.",
+        "onChangeCompleted": "Optionel. Evenement déclanché une fois le choix de couleur est finalisé.",
+        "formControl": "Le FormControl contenant la valeur du champ sélecteur de couleur"
       }
     },
     "checkbox": {
@@ -289,7 +283,7 @@
     "filter": {
       "description": "Exemple d'implémentation du composant bl-table-filter. Le composant organise les éléments en fonction du nombre d'éléments par ligne souhaité. <br>Si on souhaite appliquer un affichage spécifique il ne faut pas faire passer le nombre d'éléments et l'affichage sera celui configuré dans la page métier."
     },
-      "bl-task": {
+    "bl-task": {
       "description": "Le composant 'Tâche' est équivalent à une action à réaliser, représenté graphiquement par une carte. Les tâches sont à utiliser sur des pages de type tableau de bord pour avoir une vision synthétique des actions, à un instant T : objet de la tâche, état, échéance de réalisation et boutons d'action."
     },
     "divider": {
@@ -323,7 +317,6 @@
     "bl-stepper": {
       "description": "<p>Ce composant offre une architecture de page avec étapes, comportant par défaut les actions 'Précédent' et 'Suivant' et 'Terminer'.</p><p> Pour définir une étape il suffit d'imbriquer votre contenue dans la balise <code>bl-step</code>.</p><p>Une liste d'actions globales est aussi permise en entrée du <code>bl-stepper</code></p> ",
       "config": "Affin d'exploiter les méthodes <code>nextStep()</code> et <code>previouseStep()</code> du composant stepper , vous devez ajouter un attribut de type <code>BlStepperComponent</code> en tant que <code>@ViewChild</code> dans votre sample",
-
       "input": {
         "editable": "Activer ou désactiver la possibilité de retourner en étape précédente après validation, par défaut activé.",
         "testLabelValue": "Surcharge pour les tests automatisés la valeur de testLabel du stepper."
@@ -341,39 +334,33 @@
       "description": "Ce composant représente une structure prédéfinie de la page <br> qu'on peux utilisé pour accélérer le dévelopement des interface html, et se focaliser sur le contenue métié.<br>",
       "usage": "<p>Afin d'exploiter ce template de page , le code si-dessous démontre les différentes parties à alimenter dans le modèle de page html :</p>"
     },
-
-      "datatable": {
-        "description": "Exemple d'implémentation du composant bl-table.<br>Côté HTML il y a juste la balise bl-table avec le fichier de config et éventuellement les composants de filtre à déclarer.<br>Tout le comportement est décrit dans le fichier typeScript en configurant le modèle <b>BlTableConfig</b>.<br>Si vous souhaitez rajouter des filtres, il suffit de positionner la balise <b>bl-table-filter</b> avec les éléments de filtre à l'intèrieur de la balise bl-table.",
-        "doc-description": "Tout le paramétrage de la table est réalisé dans le fichier de config (modèle BlTableConfig)"
+    "datatable": {
+      "description": "Exemple d'implémentation du composant bl-table.<br>Côté HTML il y a juste la balise bl-table avec le fichier de config et éventuellement les composants de filtre à déclarer.<br>Tout le comportement est décrit dans le fichier typeScript en configurant le modèle <b>BlTableConfig</b>.<br>Si vous souhaitez rajouter des filtres, il suffit de positionner la balise <b>bl-table-filter</b> avec les éléments de filtre à l'intèrieur de la balise bl-table.",
+      "doc-description": "Tout le paramétrage de la table est réalisé dans le fichier de config (modèle BlTableConfig)"
+    },
+    "filter-panel": {
+      "title": "Titre à affiché en haut des filtres",
+      "tableComponent": "Le composant bl-tabale sur qui on va appliquer les filtres, doit contenir les définition des méthodes search() et reset() des filtres."
+    },
+    "multi-attachment": {
+      "description": "Exemple d'implémentation du composant bl-multi-attachment , ce composant permet d'entrer une ou plusieurs Pièces Jointes à une page ou un formulaire. ",
+      "exemples": "Exemples",
+      "doc": {
+        "title1": "Pièce jointe Multiples",
+        "required": "- Le champs est obligatoire :",
+        "required-extentions": "- Les extensions requises dans l'exemple sont :",
+        "maxSize": "- La taille maximal d'un fichier est précisé en input à  1500 ko :",
+        "maxFilesNum": "- Le nombre de fichiers autorisés est 4 dans cet exemple :",
+        "sizeFunc": "- La fonction de convertion de la taille du fichier convertie la taille en Mo :",
+        "title2": "Avec personnalisation des message d'erreurs",
+        "costumMsgErrors": "- Désactiver les messages d'erreurs par défaut avec le paramètre suivant :",
+        "title3": "Pièce jointe en ReadOnly",
+        "readonly": "- pour activer le mode lecture seul :"
       },
-      "filter-panel": {
-        "title": "Titre à affiché en haut des filtres",
-        "tableComponent": "Le composant bl-tabale sur qui on va appliquer les filtres, doit contenir les définition des méthodes search() et reset() des filtres."
-      },
-      "multi-attachment": {
-        "description": "Exemple d'implémentation du composant bl-multi-attachment , ce composant permet d'entrer une ou plusieurs Pièces Jointes à une page ou un formulaire. ",
-        "exemples": "Exemples",
-        "doc": {
-          "title1": "Pièce jointe Multiples",
-          "required": "- Le champs est obligatoire :",
-          "required-extentions": "- Les extensions requises dans l'exemple sont :",
-          "maxSize": "- La taille maximal d'un fichier est précisé en input à  1500 ko :",
-          "maxFilesNum": "- Le nombre de fichiers autorisés est 4 dans cet exemple :",
-          "sizeFunc": "- La fonction de convertion de la taille du fichier convertie la taille en Mo :",
-
-          "title2": "Avec personnalisation des message d'erreurs",
-          "costumMsgErrors": "- Désactiver les messages d'erreurs par défaut avec le paramètre suivant :",
-          "maxFilesNum": "- Le nombre de fichiers autorisés est 4 dans cet exemple :",
-          "sizeFunc": "- La fonction de convertion de la taille du fichier convertie la taille en Mo :",
-
-          "title3": "Pièce jointe en ReadOnly",
-          "readonly": "- pour activer le mode lecture seul :"
-        },
-        "required-error": "Veuillez choisir les fichiers requis",
-        "invalid-extentions": "Extension(s) invalide(s)",
-        "nbFilesExceeded": "Veuillez ne pas dépasser 2 fichiers"
-      },
-
+      "required-error": "Veuillez choisir les fichiers requis",
+      "invalid-extentions": "Extension(s) invalide(s)",
+      "nbFilesExceeded": "Veuillez ne pas dépasser 2 fichiers"
+    },
     "abstract": {
       "quickSearch": {
         "description": "Si un composant quick search  est présente sur plusieurs pages, il est recommandé de se créer un composant métier.<br>Dans l'exemple quick search  status hérite de <b>BlQuickSearchAbstractComponent</b> et précise uniquement le chargement des données depuis le service métier.<br> Dans le template HTML on insère juste la balise <b>bl-quick-search-abstract</b> avec la surcharge de tous les input de l'abstract <br><ul><li>1. Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.</li><li>2. Dans les onglets TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la liste des statuts).</li></ul>Le formcontrol est de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un objet de type BlBasicObject, pareil pour les valeurs de la liste déroulante.<br><b>Important</b>: pour qu'une variable input soit prise en compte dans le composant métier il faut la redéfinir dans le template &lt;bl-auto-abstract&gt; du composant métier (Exemple [id]=\"id\" [appearance]=\"appearance\")"
@@ -383,11 +370,9 @@
       }
     },
     "basic": {
-
       "counter": {
         "description": "Le compteur du tableau de bord permet de mettre en avant une donnée chiffrée ainsi que son évolution sur une période définie. Il peut s'afficher en version tuile ou ligne selon les besoins du projet et la place disponible sur le tableau de bord."
       },
-
       "tableEditable2": {
         "description": "La liste éditable permet d'afficher une liste en édition, avec la possibilité de supprimer, d'ajouter ou de modifier une entrée de la liste. Les champs de la liste sont définit par le développeur.<br><strong>NB: </strong> Il est conseillé de priviligier d'usage des composants de la stack BL-Element pour éviter tout souci d'alignement des colonnes.",
         "dialog": {
@@ -400,7 +385,6 @@
         "description": "Ce composant permet de sélectionner une ou plusieurs dates dans un calendrier."
       }
     },
-
     "select": {
       "description": "Cette page présente le composant \"Liste Déroulante\", qui offre la possibilité de sélectionner parmi plusieurs choix. Ce composant est couramment utilisé dans les interfaces utilisateur pour permettre aux utilisateurs de choisir une option parmi plusieurs. La liste déroulante peut être configurée pour afficher une liste de choix prédéfinis ou pour permettre à l'utilisateur de saisir une option personnalisée. Elle peut également être utilisée pour filtrer les résultats ou pour afficher des options supplémentaires en fonction des choix précédents de l'utilisateur. En somme, la liste déroulante est un composant essentiel pour les interfaces utilisateur qui nécessitent une sélection parmi plusieurs options.",
       "simple-list": "Liste déroulante simple",
@@ -410,78 +394,71 @@
       "select-list-IG-desc": "Permer d'afficher la liste déroulante selon les catégories",
       "accessibility-info": "L'accessibilité est prise en compte par les composants Material Angular."
     },
-      "shortcut": {
-        "description": "Ce composant permet d'afficher des raccourcis internes au logiciel depuis la page d'accueil. Il permet de naviger rapidement vers une fonctionnalité du service."
-      },
-      "snackbar": {
+    "shortcut": {
+      "description": "Ce composant permet d'afficher des raccourcis internes au logiciel depuis la page d'accueil. Il permet de naviger rapidement vers une fonctionnalité du service."
+    },
+    "snackbar": {
       "description": "Les snackbars informent les utilisateurs sur l’état d’un processus réalisé ou à réaliser. Elles apparaissent temporairement à l'écran. Elles n’interrompent pas l'expérience utilisateur et par défaut, elles ne nécessitent pas d'intervention de sa part pour disparaître.",
       "example": "Pour des contraintes d'accessibilité, un paramètre permet de laisser le snackbar affiché à l'écran. Par défaut ce paramètre n'est pas activé. Lorsqu'il est activé, le snackbar a le comportement suivant :"
     },
-
-      "date-picker": {
-        "description": "Saisie d'une date avec possibilité de modifier le format et la langue d'affichage.<br><br>Exemple : 19/01/2023, Janvier 2023, Januray 2022,...<br><ul><li>Si aucun format renseigné, le composant prend par défaut le format DD/MM/YYYY.</li><li>Si aucun locale renseigné, le composant s'adapte à la langue par défaut du système.</li></ul><br>Important : Pour modifier le format d'affichage du calendrier (DatePicker), il faut modifier la valeur du MAT_DATE_FORMATS comme suit : <br><ul><li>providers: [{provide: MAT_DATE_FORMATS, useValue: NOUVEAU_FORMAT}].<li>NOUVEAU_FORMAT est de type MatDateFormats, voir les examples : BL_DATE_DD_MM_YYYY_FORMATS et BL_DATE_YYYY_MM_FORMATS."
+    "date-picker": {
+      "description": "Saisie d'une date avec possibilité de modifier le format et la langue d'affichage.<br><br>Exemple : 19/01/2023, Janvier 2023, Januray 2022,...<br><ul><li>Si aucun format renseigné, le composant prend par défaut le format DD/MM/YYYY.</li><li>Si aucun locale renseigné, le composant s'adapte à la langue par défaut du système.</li></ul><br>Important : Pour modifier le format d'affichage du calendrier (DatePicker), il faut modifier la valeur du MAT_DATE_FORMATS comme suit : <br><ul><li>providers: [{provide: MAT_DATE_FORMATS, useValue: NOUVEAU_FORMAT}].<li>NOUVEAU_FORMAT est de type MatDateFormats, voir les examples : BL_DATE_DD_MM_YYYY_FORMATS et BL_DATE_YYYY_MM_FORMATS."
+    },
+    "date-picker-range": {
+      "description": "Saisie d'une plage de dates avec possibilité de modifier le format et la langue d'affichage<br><br>Exemple : 19/01/2023, Janvier 2023, Januray 2022,...<br><ul><li>Si aucun format renseigné, le composant prend par défaut le format DD/MM/YYYY</li><li>Si aucun locale renseigné, le composant s'adapte à la langue par défaut du système</li></ul><br>Important : Pour modifier le format d'affichage du calendrier, il faut modifier la valeur du MAT_DATE_FORMATS comme suit : <br><ul><li>providers: [{provide: MAT_DATE_FORMATS, useValue: NOUVEAU_FORMAT}]<li>NOUVEAU_FORMAT est de type MatDateFormats, voir les examples : BL_DATE_DD_MM_YYYY_FORMATS et BL_DATE_YYYY_MM_FORMATS."
+    },
+    "period": {
+      "description": "Saisie d'une période au format Année.mois (Exemple: 2022.09). Le formcontrol est de type string , on passe et on récupère la valeur au format AAAA.MM"
+    },
+    "time": {
+      "description": "Le composant Heure permet de saisir des heures.",
+      "declaration": "Pour déclarer un composant heure, il est nécessaire d'importer le module TimeModule de @bl/elements dans le module de votre composant : ",
+      "doc": {
+        "access": "L'accessibilité est prise en compte par le composant standard Material Angular.<br>",
+        "usage": "L’utilisateur ne peut saisir que des caractères numériques et un séparateur (caractères alphabétiques non autorisés) <br> Le contenu de la zone est formaté à la validation /sortie de la zone. <br>"
+      }
+    },
+    "year-picker": {
+      "description": "Saisie d'une année au format YYYY<br><br>Exemple : 2023"
+    },
+    "attachment": {
+      "description": "Cette page présente le composant Pièce Jointe permettant l'ajout de fichiers à une page ou un formulaire.",
+      "declaration": "<p>Une première étape est de bien créer votre formulaire à l'aide du FormGroup d'angular</p><p>Il est nécessaire d'importer le module BreadCrumbModule de @bl/elements pour avoir le composant d'affichage du fil d'ariane</p>"
+    },
+    "horizontal-gauge": {
+      "description": "Le composant jauge horizontale permet de montrer l’avancement d’une activité/d’une donnée par rapport à une prévision."
+    },
+    "text-area": {
+      "description": "Grâce à la zone de texte, les utilisateurs peuvent exprimer leurs idées de manière détaillée, formuler des réflexions approfondies, ou fournir des informations précises. Elle permet également de manipuler et de modifier le contenu en utilisant des fonctionnalités telles que la sélection, la copie, la découpe et le collage.",
+      "declaration": " Afin d'utiliser les Zones de textes dans BL.ELEMENT , il faut importer le composant bl-text-area  ainsi que de suivre les différents Inputs de cet élement."
+    },
+    "close-alert": {
+      "description": "La boite de dialogue \"Alerte fermeture\" s'affiche uniquement lorsque l'on se trouve sur un formulaire non enregistré."
+    },
+    "workflow": {
+      "description": "Différent de l'assistant Stepper, ce composant permet à un utilisateur de se situer par rapport l'avancement ou l'état d'un workflow. Le but est de fournir une vue d'ensemble d'un processus.\nIl peut également être utilisé pour représenter l'avancement dans le temps. Exemple : un historique.",
+      "declaration": "<p>Pour bien configurer le composant Workflow, il est nécessaire de suivre l'objet de configuration situé ci-dessous.</p><p>Le champ 'état' est spécialement conçu pour indiquer l'état de notre étape, prenant en paramètre un énum de type WorkflowEtatEnum. Par défaut, ils prennent la valeur 'noncomplette'.</p><p> Le champ 'élément' sert à indiquer le type de composant à afficher. Il est strictement limité à trois types de composants : 'bl-button', 'bl-hyperlink' et 'label'.</p>"
+    },
+    "chips": {
+      "description": "Les chips sont des éléments compacts, pouvant avoir plusieurs fonctions : Afficher un filtre actif, afficher une information, faire une sélection ou ajouter du contenu."
+    },
+    "sticky-header": {
+      "description": "Le composant 'sticky-header' permet de maintenir le titre en position fixe lorsque l'on fait défiler vers le haut."
+    },
+    "list": {
+      "description": "Liste déroulante, multi combo, et autocomplete permettent de ne pas faire de composant métier et de faire passer la liste de valeurs directement depuis la page métier.<br>Il est recommandé d'utiliser ces composants là lorsqu'une liste apparait dans un seul écran et qu'il n'est pas nécessaire d'en faire un composant métier.<ul><li>- bl-autocomplete : liste déroulante avec aide à la saisie.</li><li>- bl-list-box: liste déroulante basique.</li><li>- bl-multi-combo: liste avec sélection multiple.</li></ul>Le formcontrol est de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un objet de ce type là, pareil pour les valeurs de la liste.<br>Attention : pour la liste déroulante, pour avoir la valeur 'Aucun' ou 'Tous' il faut positionner addNullableOption à true (false par défaut) et mettre dans le placeholder Aucun ou Tous. Si cette valeur est sélectionnée, l'objet retourné aura comme valeur null."
+    },
+    "lists": {
+      "listbox": {
+        "description": "Si une liste déroulante est présente sur plusieurs pages, il est recommandé de se créer un composant métier.<br>Dans l'exemple la liste status hérite de <b>BlListBoxAbstractComponent</b>  et précise uniquement le chargement des données depuis le service métier.<br> Dans le template HTML on insère juste la balise <b>bl-list-box-abstract</b> avec la surcharge de tous les input de l'abstract.<br><ul><li>1. Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.</li><li>2. Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la liste des statuts).</li></ul>Le formcontrol est de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un objet de ce type là, pareil pour les valeurs de la liste.<br>Attention : pour la liste déroulante, pour avoir la valeur 'Aucun' ou 'Tous' il faut positionner addNullableOption à true et mettre dans le placeholder Aucun ou Tous. Si cette valeur est sélectionnée, l'objet retourné aura comme valeur null.<br><b>Important</b>: pour qu'une variable input soit prise en compte dans le composant métier il faut la redéfinir dans le template &lt;bl-list-box-abstract&gt; du composant métier (Exemple [id]=\"id\" [appearance]=\"appearance\")"
       },
-      "date-picker-range": {
-        "description": "Saisie d'une plage de dates avec possibilité de modifier le format et la langue d'affichage<br><br>Exemple : 19/01/2023, Janvier 2023, Januray 2022,...<br><ul><li>Si aucun format renseigné, le composant prend par défaut le format DD/MM/YYYY</li><li>Si aucun locale renseigné, le composant s'adapte à la langue par défaut du système</li></ul><br>Important : Pour modifier le format d'affichage du calendrier, il faut modifier la valeur du MAT_DATE_FORMATS comme suit : <br><ul><li>providers: [{provide: MAT_DATE_FORMATS, useValue: NOUVEAU_FORMAT}]<li>NOUVEAU_FORMAT est de type MatDateFormats, voir les examples : BL_DATE_DD_MM_YYYY_FORMATS et BL_DATE_YYYY_MM_FORMATS."
+      "multicombo": {
+        "description": "Si une liste à sélection multiple est présente sur plusieurs pages, il est recommandé de se créer un composant métier.<br>Dans l'exemple la multi combo status étend <b>BlMultiComboAbstractComponent</b>  et fait appel au template <bl-multi-combo-abstract> pour hériter du HTML. On précise uniquement le chargement des données depuis le service métier dans le composant métier. Cela permet de ne pas dupliquer la partie subscribe au service dans chaque page qui l'utilise.<br><ul><li>1. Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.</li><li>2. Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la multi combo des statuts).</li></ul>Le formcontrol est un tableau de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un tableau d'objets de BlBasicObject, pareil pour les valeurs de la liste déroulante..<br><b>Important</b>: pour qu'une variable input soit prise en compte dans le composant métier il faut la redéfinir dans le template &lt;bl-multi-combo-abstract&gt; du composant métier (Exemple [id]=\"id\" [appearance]=\"appearance\") "
       },
-
-      "period": {
-        "description": "Saisie d'une période au format Année.mois (Exemple: 2022.09). Le formcontrol est de type string , on passe et on récupère la valeur au format AAAA.MM"
-      },
-      "time": {
-        "description": "Le composant Heure permet de saisir des heures.",
-        "declaration": "Pour déclarer un composant heure, il est nécessaire d'importer le module TimeModule de @bl/elements dans le module de votre composant : ",
-        "doc": {
-          "access": "L'accessibilité est prise en compte par le composant standard Material Angular.<br>",
-          "usage": "L’utilisateur ne peut saisir que des caractères numériques et un séparateur (caractères alphabétiques non autorisés) <br> Le contenu de la zone est formaté à la validation /sortie de la zone. <br>"
-        }
-      },
-      "year-picker": {
-        "description": "Saisie d'une année au format YYYY<br><br>Exemple : 2023"
-      },
-
-      "attachment": {
-        "description": "Cette page présente le composant Pièce Jointe permettant l'ajout de fichiers à une page ou un formulaire.",
-        "declaration": "<p>Une première étape est de bien créer votre formulaire à l'aide du FormGroup d'angular</p><p>Il est nécessaire d'importer le module BreadCrumbModule de @bl/elements pour avoir le composant d'affichage du fil d'ariane</p>"
-      },
-      "horizontal-gauge": {
-        "description": "Le composant jauge horizontale permet de montrer l’avancement d’une activité/d’une donnée par rapport à une prévision."
-      },
-      "text-area": {
-        "description": "Grâce à la zone de texte, les utilisateurs peuvent exprimer leurs idées de manière détaillée, formuler des réflexions approfondies, ou fournir des informations précises. Elle permet également de manipuler et de modifier le contenu en utilisant des fonctionnalités telles que la sélection, la copie, la découpe et le collage.",
-        "declaration": " Afin d'utiliser les Zones de textes dans BL.ELEMENT , il faut importer le composant bl-text-area  ainsi que de suivre les différents Inputs de cet élement."
-      },
-
-      "close-alert": {
-        "description": "La boite de dialogue \"Alerte fermeture\" s'affiche uniquement lorsque l'on se trouve sur un formulaire non enregistré."
-      },
-
-      "workflow": {
-        "description": "Différent de l'assistant Stepper, ce composant permet à un utilisateur de se situer par rapport l'avancement ou l'état d'un workflow. Le but est de fournir une vue d'ensemble d'un processus.\nIl peut également être utilisé pour représenter l'avancement dans le temps. Exemple : un historique.",
-        "declaration": "<p>Pour bien configurer le composant Workflow, il est nécessaire de suivre l'objet de configuration situé ci-dessous.</p><p>Le champ 'état' est spécialement conçu pour indiquer l'état de notre étape, prenant en paramètre un énum de type WorkflowEtatEnum. Par défaut, ils prennent la valeur 'noncomplette'.</p><p> Le champ 'élément' sert à indiquer le type de composant à afficher. Il est strictement limité à trois types de composants : 'bl-button', 'bl-hyperlink' et 'label'.</p>"
-      },
-      "chips": {
-        "description": "Les chips sont des éléments compacts, pouvant avoir plusieurs fonctions : Afficher un filtre actif, afficher une information, faire une sélection ou ajouter du contenu."
-      },
-      "sticky-header": {
-        "description": "Le composant 'sticky-header' permet de maintenir le titre en position fixe lorsque l'on fait défiler vers le haut."
-      },
-
-      "list": {
-        "description": "Liste déroulante, multi combo, et autocomplete permettent de ne pas faire de composant métier et de faire passer la liste de valeurs directement depuis la page métier.<br>Il est recommandé d'utiliser ces composants là lorsqu'une liste apparait dans un seul écran et qu'il n'est pas nécessaire d'en faire un composant métier.<ul><li>- bl-autocomplete : liste déroulante avec aide à la saisie.</li><li>- bl-list-box: liste déroulante basique.</li><li>- bl-multi-combo: liste avec sélection multiple.</li></ul>Le formcontrol est de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un objet de ce type là, pareil pour les valeurs de la liste.<br>Attention : pour la liste déroulante, pour avoir la valeur 'Aucun' ou 'Tous' il faut positionner addNullableOption à true (false par défaut) et mettre dans le placeholder Aucun ou Tous. Si cette valeur est sélectionnée, l'objet retourné aura comme valeur null."
-      },
-
-      "lists": {
-        "listbox": {
-          "description": "Si une liste déroulante est présente sur plusieurs pages, il est recommandé de se créer un composant métier.<br>Dans l'exemple la liste status hérite de <b>BlListBoxAbstractComponent</b>  et précise uniquement le chargement des données depuis le service métier.<br> Dans le template HTML on insère juste la balise <b>bl-list-box-abstract</b> avec la surcharge de tous les input de l'abstract.<br><ul><li>1. Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.</li><li>2. Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la liste des statuts).</li></ul>Le formcontrol est de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un objet de ce type là, pareil pour les valeurs de la liste.<br>Attention : pour la liste déroulante, pour avoir la valeur 'Aucun' ou 'Tous' il faut positionner addNullableOption à true et mettre dans le placeholder Aucun ou Tous. Si cette valeur est sélectionnée, l'objet retourné aura comme valeur null.<br><b>Important</b>: pour qu'une variable input soit prise en compte dans le composant métier il faut la redéfinir dans le template &lt;bl-list-box-abstract&gt; du composant métier (Exemple [id]=\"id\" [appearance]=\"appearance\")"
-        },
-        "multicombo": {
-          "description": "Si une liste à sélection multiple est présente sur plusieurs pages, il est recommandé de se créer un composant métier.<br>Dans l'exemple la multi combo status étend <b>BlMultiComboAbstractComponent</b>  et fait appel au template <bl-multi-combo-abstract> pour hériter du HTML. On précise uniquement le chargement des données depuis le service métier dans le composant métier. Cela permet de ne pas dupliquer la partie subscribe au service dans chaque page qui l'utilise.<br><ul><li>1. Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.</li><li>2. Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la multi combo des statuts).</li></ul>Le formcontrol est un tableau de type <b>BlBasicObject</b> qui contient 3 valeurs: id, code(facultatif) et label. Si on souhaite initialiser la sélection , il faut lui faire passer un tableau d'objets de BlBasicObject, pareil pour les valeurs de la liste déroulante..<br><b>Important</b>: pour qu'une variable input soit prise en compte dans le composant métier il faut la redéfinir dans le template &lt;bl-multi-combo-abstract&gt; du composant métier (Exemple [id]=\"id\" [appearance]=\"appearance\") "
-        },
-        "search-abstract": {
-          "description": "Si un composant search est présent sur plusieurs pages, il est recommandé de se créer un compoant métier autonome.<br>Dans l'exemple le search status hérite de l'abstractSearch et précise uniquement le chargement des données depuis le service métier.<br>Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.<br>Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la liste des statuts)'"
-        }
-      },
+      "search-abstract": {
+        "description": "Si un composant search est présent sur plusieurs pages, il est recommandé de se créer un compoant métier autonome.<br>Dans l'exemple le search status hérite de l'abstractSearch et précise uniquement le chargement des données depuis le service métier.<br>Dans le code de l'onglet TS(objet métier) on a l'implémentation métier.<br>Dans le TS et HTML l'utilisation du composant métier dans une page (dans notre exemple la liste des statuts)'"
+      }
+    },
     "style": {
       "number-chip": {
         "description": "Ce composant est une pastille numérique qui permet d'afficher un nombre avec un fond coloré. Il peut être utilisé pour afficher des indicateurs de performance, des statistiques ou des données numériques.",
@@ -535,8 +512,7 @@
         },
         "categorie2": {
           "nom": "We Magnus",
-          "liens": {
-          }
+          "liens": {}
         },
         "categorie3": {
           "nom": "Gestion financière",
@@ -573,9 +549,7 @@
         },
         "categorie6": {
           "nom": "Transverse",
-          "liens": {
-
-          }
+          "liens": {}
         },
         "marktng-panel": {
           "card1": "Première fiche",
@@ -592,15 +566,14 @@
         "text1": "Lien externe",
         "text2": "Page d'accueil",
         "text3": "12 456789 1234567 901 34567890 123",
-        "tooltip-long" : "Text du tooltip",
+        "tooltip-long": "Text du tooltip",
         "text4": "Action spécifique",
-        "text5" : "Ce bouton lien n'a pas de bordure",
-        "tooltip-long" : "Text du tooltip",
+        "text5": "Ce bouton lien n'a pas de bordure",
         "external-link": "Exemple de bouton vers un lien externe :",
         "specific-link": "Exemple de bouton vers une page interne :",
         "long-text": "Exemple de bouton lien avec un texte long :",
         "simple-icon": "Bouton lien avec icone simple :",
-        "specificStyle" : "Afficher le style spécifique métier :",
+        "specificStyle": "Afficher le style spécifique métier :",
         "borderless-wraped-link": "Exemple de bouton lien sans bordure et avec possibilité d'afficher un texte long :"
       },
       "button": {
@@ -633,39 +606,39 @@
         "declaration": "L'affiche du bouton de notification et la redirection sont définis dans l'objet appConfig utilisé par BL-Layout.",
         "accessibility": "L'accessibilité est prise en compte par le composant.\n"
       },
-      "tab-group" : {
-        "description" : "Ce composant offre une structure multi onglets avec les boutons 'Suivant' et 'Précédent', et la possibilité de définir des actions métier."
+      "notification-modal": {
+        "description": "Cette page explique comment déclarer et utiliser la notion de notifications en mode modale. Le composant affiche les données de type liste de NotificationItem[]. La modal affiche les cinq dernières notifications groupées par catégorie. Le composant offre la possibilité d'intégrer un code spécifique dans la partie header à droite par défaut un boutton 'Tout effacer' est affiché.",
+        "exemple1": "Exemple avec 5 notifications :",
+        "customHeader":"Exemple avec des actions header personnalisées :"
       },
-
+      "tab-group": {
+        "description": "Ce composant offre une structure multi onglets avec les boutons 'Suivant' et 'Précédent', et la possibilité de définir des actions métier."
+      },
       "imageWithContent": {
         "description": "Ce composant représente une image avec du contenu flottant , principalement des boutons"
       }
-
     },
-
-  "variables": {
-
-    "bubble-icon": {
-      "iconName": "Nom de l'icône à afficher (IconClassEnum,String)",
-      "color": "couleur de la bulle (Blue,Rouge,Orange)",
-      "bubbleRotation": "Rotation de la bulle (Gauche,Droite,Haut,Bas)",
-      "bubbleSize": "Largeur de la bulle (XS,S,M,L)",
-      "zoomAnimation": "Animation simulant le battement d'un cœur",
-      "dingDingAnimation": "Animation simulant  une cloche qui sonne",
-      "iconSize": "Largeur de l'icone",
-      "bubbleClassCustomizedColor": "Classe CSS spécéfique a la bulle"
-
-    },
-    "breadcrumb": {
-      "input": {
-        "parent": "Liste des pages parentes/précédentes au format { text: string, link: string }.",
-        "current": "Page courante au format string.",
-        "bgcolor": "Couleur du background.",
-        "arialabel": "L'aria-label du composant (par défaut breadcrumb).",
-        "testlabelvalue": "testlabel de l'élément courant."
-       },
-      "description": "Le fil d'ariane est un élément de repère et un système de navigation. Il indique la position courante de l'utilisateur dans l'arborescence du site par rapport à la page d'accueil. Il permet de revenir en un clic sur les pages « parentes ».<br>Les pages précédentes (pages parentes) sont cliquables et affichées en bleu primaire. C'est le même style que les liens.<br>La page actuelle est non cliquable. Style de texte normal."
-     },
+    "variables": {
+      "bubble-icon": {
+        "iconName": "Nom de l'icône à afficher (IconClassEnum,String)",
+        "color": "couleur de la bulle (Blue,Rouge,Orange)",
+        "bubbleRotation": "Rotation de la bulle (Gauche,Droite,Haut,Bas)",
+        "bubbleSize": "Largeur de la bulle (XS,S,M,L)",
+        "zoomAnimation": "Animation simulant le battement d'un cœur",
+        "dingDingAnimation": "Animation simulant  une cloche qui sonne",
+        "iconSize": "Largeur de l'icone",
+        "bubbleClassCustomizedColor": "Classe CSS spécéfique a la bulle"
+      },
+      "breadcrumb": {
+        "input": {
+          "parent": "Liste des pages parentes/précédentes au format { text: string, link: string }.",
+          "current": "Page courante au format string.",
+          "bgcolor": "Couleur du background.",
+          "arialabel": "L'aria-label du composant (par défaut breadcrumb).",
+          "testlabelvalue": "testlabel de l'élément courant."
+        },
+        "description": "Le fil d'ariane est un élément de repère et un système de navigation. Il indique la position courante de l'utilisateur dans l'arborescence du site par rapport à la page d'accueil. Il permet de revenir en un clic sur les pages « parentes ».<br>Les pages précédentes (pages parentes) sont cliquables et affichées en bleu primaire. C'est le même style que les liens.<br>La page actuelle est non cliquable. Style de texte normal."
+      },
       "close-alert": {
         "changed": "Paramètre qui permet de contrôler l'état du formulaire (par défault false)"
       },
@@ -734,125 +707,123 @@
         "floatButtonsLeftPercentPosition": "positionnement LEFT des enfants par rapport à l'image (par défaut 50%)",
         "floatButtonsRightPercentPosition": "positionnement RIGHT  des enfants par rapport à l'image (par défaut 50%)",
         "transparentChildren": "Boutons mode transparent",
-
         "testlabel": "valeur du testlabel"
       },
-    "button-link": {
-      "input": {
-        "text": "Texte du bouton tronqué à partir de 30 caractères",
-        "icon": "Icone du bouton de type IconClassEnum. Par défaut 'IconClassEnum.arrow_up_right'",
-        "iconColor": "Couleur de l'icone du bouton, par défaut 'bleu claire'",
-        "iconSize": "Taille de l'icone , 1 2 ou 3",
-        "iconSquare": "Boulean, indique si l'icone est une bl-icone-square ou bien une bl-icon simple. par défaut icone-square",
-        "externalPath": "Lien externe du bouton. Facultatif",
-        "tooltipText" : "Text à afficher au survole sur le bouton",
-
-        "borderless": "Pour désactiver la bordure du boutton . par défaut activé.",
-        "truncate": "Défnir si le text du boutton vas être tronqué ou non . par défaut tronqué.",
-        "wrapText": "Activer la retoure à la ligne . désactivé par défaut",
-        "textStyle": "Classes de style spécifique à appliquer sur le text du bouton" ,
-        "testLabel": "Valeur de test pour les tests automatisés",
-        "derivedBorderRadius": "Activation de bordures spécifiques : (dans le cas du logo Berger-Levrault, par exemple)"
+      "button-link": {
+        "input": {
+          "text": "Texte du bouton tronqué à partir de 30 caractères",
+          "icon": "Icone du bouton de type IconClassEnum. Par défaut 'IconClassEnum.arrow_up_right'",
+          "iconColor": "Couleur de l'icone du bouton, par défaut 'bleu claire'",
+          "iconSize": "Taille de l'icone , 1 2 ou 3",
+          "iconSquare": "Boulean, indique si l'icone est une bl-icone-square ou bien une bl-icon simple. par défaut icone-square",
+          "externalPath": "Lien externe du bouton. Facultatif",
+          "tooltipText": "Text à afficher au survole sur le bouton",
+          "borderless": "Pour désactiver la bordure du boutton . par défaut activé.",
+          "truncate": "Défnir si le text du boutton vas être tronqué ou non . par défaut tronqué.",
+          "wrapText": "Activer la retoure à la ligne . désactivé par défaut",
+          "textStyle": "Classes de style spécifique à appliquer sur le text du bouton",
+          "testLabel": "Valeur de test pour les tests automatisés",
+          "derivedBorderRadius": "Activation de bordures spécifiques : (dans le cas du logo Berger-Levrault, par exemple)"
+        },
+        "output": {
+          "clickEvent": "Evènement déclanché au click sur le bouton"
+        }
       },
-      "output": {
-        "clickEvent": "Evènement déclanché au click sur le bouton"
-      }
-    },
-    "dashboard-list": {
-      "Input": {
-        "searchHeader": "label de l'entête du composant (par défaut Dossiers)",
-        "searchBodyLabel": "Label du corps (par défaut : Derniers dossiers consultés",
-        "cardWidth": "La largeur de la carte ",
-        "data": "data à transmettre au composant de type Map<any, BlDashboardData>",
-        "enableSearch": "activer la recherche",
-        "headerActionButton": "action pour le bouton d'êntete",
-        "displayHeaderActionButton": "affichage du bouton d'entête",
-        "testLabelValue": "valeur de test",
-        "placeHoderSearch": "message a afficher au sein de la rechercher",
-        "tooltip": "tooltip du bouton header",
-        "displayUserIcon": "Affichage de l'icone utilisateur",
-        "routingMode": "mode qui permet de naviguer au sein de l'application",
-        "enableDividerBetweenRows": "Activer l'effet devider pour les lignes",
-        "tableInsideDashboardWidth": "Définir la largeur du tableau qui se trouve au sein de la carte"
+      "dashboard-list": {
+        "Input": {
+          "searchHeader": "label de l'entête du composant (par défaut Dossiers)",
+          "searchBodyLabel": "Label du corps (par défaut : Derniers dossiers consultés",
+          "cardWidth": "La largeur de la carte ",
+          "data": "data à transmettre au composant de type Map<any, BlDashboardData>",
+          "enableSearch": "activer la recherche",
+          "headerActionButton": "action pour le bouton d'êntete",
+          "displayHeaderActionButton": "affichage du bouton d'entête",
+          "testLabelValue": "valeur de test",
+          "placeHoderSearch": "message a afficher au sein de la rechercher",
+          "tooltip": "tooltip du bouton header",
+          "displayUserIcon": "Affichage de l'icone utilisateur",
+          "routingMode": "mode qui permet de naviguer au sein de l'application",
+          "enableDividerBetweenRows": "Activer l'effet devider pour les lignes",
+          "tableInsideDashboardWidth": "Définir la largeur du tableau qui se trouve au sein de la carte"
+        },
+        "Output": {
+          "rowClick": "Evenement click sur la ligne"
+        }
       },
-      "Output": {
-        "rowClick": "Evenement click sur la ligne"
-      }
-    },
-    "label": {
-      "labelValue": "Valeur du label",
-      "labelState": "Statut de label (Default, Primary , Success , Info , Warning , Danger) l'utilisation de l'enum LabelState est nécessaire",
-      "testLabelValue": "Surcharge pour les tests automatisés la valeur de testLabel"
-    },
-    "label-counter": {
-      "labelValue": "Valeur affichée dans le composant",
-      "labelState": "Statut de label(Info,Warning,Error,Success)",
-      "labelClass": "Classe Css à ajouter si nécessaire",
-      "testLabelValue": "Surcharge pour les tests automatisés la valeur de testLabel",
-      "iconLabel": "Icone dans le libéllé"
-    },
-    "hyperlink": {
-      "description": "Le lien hypertexte facilite la navigation. Il permet d'accéder à une autre page, au sein de l'application ou à l'extérieur de l'application.",
-      "text": "Texte affiché, peut être complété par des icônes ou des images",
-      "link": "URL du lien",
-      "arrow": "Flèche à gauche du lien affiché par défaut (par défaut :true)",
-      "title": "Tooltip",
-      "testLabelValue": "Déstiné pour les tests ",
-      "optionalStyle": "Paramètre pour appliquer un style optionnel sur le composant (par défaut : block), 'inline-flex' pour un affichage en ligne",
-      "hyperlinkClick": {
-        "title": "Lien vers Berger Levrault (nouvelle fenêtre)",
-        "text": "Lien vers   Berger Levrault avec flèche",
-        "textWithoutArrow": "Lien sans flèche"
-      }
-    },
-    "memo": {
-      "description": "Dérivé du composant 'Tâche', le composant 'Mémo' est l'équivalent d'un \"Post-it\".",
-      "inputs": {
-        "noteInformation": "Utilisez BlNoteModel afin d'instancier votre mémo ",
-        "noteActions": "Boutons pérsonnalisées pour chaque note de la mémo",
-        "testLabelValue": "valeurs de tests",
-        "showShadowTertiary": "afficher l'effet ombre dans le thème tertiaire"
+      "label": {
+        "labelValue": "Valeur du label",
+        "labelState": "Statut de label (Default, Primary , Success , Info , Warning , Danger) l'utilisation de l'enum LabelState est nécessaire",
+        "testLabelValue": "Surcharge pour les tests automatisés la valeur de testLabel"
       },
-      "messages": {
-        "lengthMessage": "Vous ne devez pas dépasser 150 caractères dans votre paragraphe.",
-        "important": "Important",
-        "exampleLengthMessage": "Le dépassement de 150 caractères dans le texte du mémo va générer automatiquement un erreur :",
-        "exampleUrgentMessage": "Afin d'afficher un ticket urgent vous devez mettre isImportant à true ",
-        "memoExample": "bl-memo vous offre le choix entre 4 couleurs"
-      }
-    },
-    "counter": {
-      "lineVersion": "Version ligne (par défaut true).",
-      "cardVersion": "Version carte (par défaut false).",
-      "title": "Titre.",
-      "subtitle": "Sous-titre.",
-      "mainNumber": "Nombre principal.",
-      "icon": "Icone (version carte).",
-      "ascend": "Définir si le compteur est  positif.",
-      "descend": "Définir si le compteur est négatif.",
-      "stable": "Définir si le compteur est  stable.",
-      "customColors": "Couleurs personnalisés.",
-      "points": "Liste des points à schématiser. ",
-      "resultOperation": "L'état d'affichage à coté de l'icone (version carte)."
-    },
-    "accessibility_template": {
-      "pageTitle": "Titre de la page ",
-      "titlesList": "Titre des cartes",
-      "pageIcon": "Icone de La page",
-      "sameHeightCards": "Affichage de cartes horizontales avec la même hauteur (par défaut true)",
-      "headerCloseButton": "Le bouton Fermer  du header (false dans notre cas)"
-    },
-    "date-picker-range": {
-      "startDate": "formControl nécessaire pour piloter le contrôle et accéder aux propriétés et méthodes",
-      "endDate": "formControl nécessaire pour piloter le contrôle et accéder aux propriétés et méthodes",
-      "minRange": "Date à partir de laquel on peux choisir une plage de dates. Optionel",
-      "maxRange": "Date maximal qu'on peux choisir comme date de fin de la plage de dates. Optionel"
-    },
-    "divider": {
-      "inset": "inset (par défaut : false)",
-      "vertical": "Lignes verticales (par défaut : false)",
-      "style": "Style appliqué au divider (par défaut : vide)"
-    },
+      "label-counter": {
+        "labelValue": "Valeur affichée dans le composant",
+        "labelState": "Statut de label(Info,Warning,Error,Success)",
+        "labelClass": "Classe Css à ajouter si nécessaire",
+        "testLabelValue": "Surcharge pour les tests automatisés la valeur de testLabel",
+        "iconLabel": "Icone dans le libéllé"
+      },
+      "hyperlink": {
+        "description": "Le lien hypertexte facilite la navigation. Il permet d'accéder à une autre page, au sein de l'application ou à l'extérieur de l'application.",
+        "text": "Texte affiché, peut être complété par des icônes ou des images",
+        "link": "URL du lien",
+        "arrow": "Flèche à gauche du lien affiché par défaut (par défaut :true)",
+        "title": "Tooltip",
+        "testLabelValue": "Déstiné pour les tests ",
+        "optionalStyle": "Paramètre pour appliquer un style optionnel sur le composant (par défaut : block), 'inline-flex' pour un affichage en ligne",
+        "hyperlinkClick": {
+          "title": "Lien vers Berger Levrault (nouvelle fenêtre)",
+          "text": "Lien vers   Berger Levrault avec flèche",
+          "textWithoutArrow": "Lien sans flèche"
+        }
+      },
+      "memo": {
+        "description": "Dérivé du composant 'Tâche', le composant 'Mémo' est l'équivalent d'un \"Post-it\".",
+        "inputs": {
+          "noteInformation": "Utilisez BlNoteModel afin d'instancier votre mémo ",
+          "noteActions": "Boutons pérsonnalisées pour chaque note de la mémo",
+          "testLabelValue": "valeurs de tests",
+          "showShadowTertiary": "afficher l'effet ombre dans le thème tertiaire"
+        },
+        "messages": {
+          "lengthMessage": "Vous ne devez pas dépasser 150 caractères dans votre paragraphe.",
+          "important": "Important",
+          "exampleLengthMessage": "Le dépassement de 150 caractères dans le texte du mémo va générer automatiquement un erreur :",
+          "exampleUrgentMessage": "Afin d'afficher un ticket urgent vous devez mettre isImportant à true ",
+          "memoExample": "bl-memo vous offre le choix entre 4 couleurs"
+        }
+      },
+      "counter": {
+        "lineVersion": "Version ligne (par défaut true).",
+        "cardVersion": "Version carte (par défaut false).",
+        "title": "Titre.",
+        "subtitle": "Sous-titre.",
+        "mainNumber": "Nombre principal.",
+        "icon": "Icone (version carte).",
+        "ascend": "Définir si le compteur est  positif.",
+        "descend": "Définir si le compteur est négatif.",
+        "stable": "Définir si le compteur est  stable.",
+        "customColors": "Couleurs personnalisés.",
+        "points": "Liste des points à schématiser. ",
+        "resultOperation": "L'état d'affichage à coté de l'icone (version carte)."
+      },
+      "accessibility_template": {
+        "pageTitle": "Titre de la page ",
+        "titlesList": "Titre des cartes",
+        "pageIcon": "Icone de La page",
+        "sameHeightCards": "Affichage de cartes horizontales avec la même hauteur (par défaut true)",
+        "headerCloseButton": "Le bouton Fermer  du header (false dans notre cas)"
+      },
+      "date-picker-range": {
+        "startDate": "formControl nécessaire pour piloter le contrôle et accéder aux propriétés et méthodes",
+        "endDate": "formControl nécessaire pour piloter le contrôle et accéder aux propriétés et méthodes",
+        "minRange": "Date à partir de laquel on peux choisir une plage de dates. Optionel",
+        "maxRange": "Date maximal qu'on peux choisir comme date de fin de la plage de dates. Optionel"
+      },
+      "divider": {
+        "inset": "inset (par défaut : false)",
+        "vertical": "Lignes verticales (par défaut : false)",
+        "style": "Style appliqué au divider (par défaut : vide)"
+      },
       "checkbox": {
         "color": "Couleurs a utiliser par défaut primary",
         "required": "Requis (par défaut : false) ",
@@ -902,7 +873,7 @@
       "periode": {
         "mindate": "Date minimum sélectionnable dans le datepicker au format année.mois(yyyy.mm)"
       },
-      "list" : {
+      "list": {
         "lst": "Tableau d'objet de type BlBasicObject (id, code , libelle)",
         "withcode": "Booléen si true affiche le code de l'objet BlBasicObject en plus du libellé",
         "aucun": "Libellé quand on sélectionne aucun élément (par défaut Tous)",
@@ -917,7 +888,7 @@
         "headerButtons": "Il s'agit d'un ensemble de boutons qui seront affichés dans l'en-tête du composant. Ces boutons seront de type BlAction[].",
         "eventMode": "permet d'activer  mode évènement  lors du click  (par défaut false)",
         "output": {
-            "shortCutClicked": "Evènement déclenché lors du click sur un raccourci. (N'oubliez pas de  mettre eventMode à true)"
+          "shortCutClicked": "Evènement déclenché lors du click sur un raccourci. (N'oubliez pas de  mettre eventMode à true)"
         }
       },
       "libelle": {
@@ -931,7 +902,6 @@
         "showLabel": "Booléen défaut true permet de conditionner l'affichage du label ",
         "customErrorsMap": "Map<string,string> le clé correspond au code de la validation et la valeur et le code i18n pour le message d'erreur.",
         "hideRequiredStar": "Pour désactiver l'affichage par défaud de l'astérisque dans le libellé quand le champ est requis"
-
       },
       "form-error": {
         "customErrorMessage": {
@@ -967,14 +937,16 @@
         }
       },
       "quick-search": {
-         "modalTitle": "Titre du modal",
+        "modalTitle": "Titre du modal",
         "templateMode": "Mode template qui permet de passer un contenu dynamic si c'est true (par défaut false)",
         "customBody": "Contenu du modal si le mode template est activé",
         "callOutBodyComponents": "Liste des composants CallOuts : CallOutObject[] à afficher dans le body du modal",
         "config": "La config du compasant <bl-table> pour l'affichage du list des choix ",
         "autocomplfunc": "Fonction qui permet de mettre à jour la liste auto-complete à chaque entrée.",
         "customAction": "Facultatif. Action personnalisée de type customActionSearch (testLabel: string; icon: IconClassEnum; label: string;)",
-        "actionEvent": "Evénement déclenché lors de l'action personnalisée"
+        "actionEvent": "Evénement déclenché lors de l'action personnalisée",
+        "dialogCancelButton": "Personnaliser  le tooltip , texte , affichage et choix d'icone pour le bouton Annnuler de la modal ouverte ",
+        "dialogValidationButton" : "Personnaliser  l'event , le tooltip , texte , affichage et choix d'icone pour le bouton Valider de la modal ouverte  dans le cas ou le mode template est activé sinon un comportement par défaut est appliqué"
       },
       "qsmulti": {
         "config": "La config du compasant <bl-table> pour l'affichage du list des choix ",
@@ -983,7 +955,6 @@
       },
       "decimal": {
         "description": "Saisie d'un nombre à virgule avec possibilité de préciser :<ul><li>1. L' autorisation ou pas des nombres négatifs (par défaut false)</li><li>2. Le nombre de décimales souhaité ( par défaut 2 si 0 type entier uniquement)</li><li>3. Le séparateur souhaité (par défaut , et . sont autorisés)</li><li>4. Si l'on souhaite afficher le sigle euro pour indiquer un prix (non affiché par défaut)</li></ul><p>Le formcontrol est de type number</p> <p>L'utilisation des erreurs pérsonnalisées se fait a partir de l'input customErrorMap (à voir le code du sample).</p> ",
-
         "nbDecimal": "Nombre de décimales souhaitées (0..n) (défaut 2)",
         "isSigleEuro": "si true affiche le logo euro (défaut false)",
         "separator": "Virgule ou Point accepté ( défaut . et , acceptés)",
@@ -1002,12 +973,16 @@
         "pageIndex": "L'index de la première page affichée du paginator (par défaut 0)",
         "pageSize": "Nombre d'éléments par page (par défaut 10)",
         "enableConsultation": "Facultatif (false par défaut): booléen rendant les notifications cliquables/consultables lorsque l'attribut 'ref' du modèle de notification est non null / non vide",
-        "deleteAll": "L'événement de la suppression de toutes les notifications",
+        "deleteAll": "L'événement de la suppression de toutes les notifications, facultatif",
         "consultItemEvent": "L'événement au clic sur la ligne ou le bouton de consultation d'une notification si enableConsultation est true",
         "deleteNotification": "L'événement de la suppression d'une notification",
         "readNotification": "Cet événement est déclenché lorsque l'utilisateur marque une notification comme lue",
         "unreadNotification": "Cet événement est déclenché lorsque l'utilisateur marque une notification comme non lue",
         "refresh": "L'événement qui actualise la liste des notifications"
+
+      },
+      "notification-modal" :{
+        "showDeleteAllButton": "Afficher le bouton de suppression de toutes les notifications.Par défaut 'true'."
       },
       "fab-menu": {
         "input": {
@@ -1072,7 +1047,9 @@
         "iconClassName": "Obligatoire , à renseigner pour avoir une icone. Chaine de caractère ou valeur de l'enum IconClassEnum",
         "isTitle": "Facultatif, pour appliquer un style de fond remplit à l'icone lié à un titre. ",
         "color": "Facultatif, un code couleur ou une couleur css à appliquer sur le font de l'icon qui est par défaut noir.",
-        "align": "L'alignement vertical de l'icone , Par défaut centré au milieu."
+        "align": "L'alignement vertical de l'icone , Par défaut centré au milieu.",
+        "tooltip": "Facultatif , le texte à afficher au survole de l'icone",
+        "tooltipPosition": "Facultatif , la position du tooltip par rapport à l'icone de type BlTooltipPosition {ABOVE | BELOW | BEFORE | AFTER} "
       },
       "verticalmenu": {
         "listAction": "Array de type BlAction qui décrit un élément du menu (on utilise uniquement le label, l'eventEmitter et éventuellement l'icone et le confirmMessage du modèle BlAction)",
@@ -1119,7 +1096,8 @@
         "pageIndex": "Number: Permet à l'utilisateur de fixer l'index du paginator.",
         "searchInitInput": "Impact Visuel - Permet de donner une valeur à la recherche au NgOnInit",
         "noDataMessage": "Message à afficher si la liste est vide",
-        "showCellsToolTip": "Afficher les Tooltip des cellules . Par défaut on affiche les données de la cellules, si on souhaite afficher un text custumisé il faut passer les données en entrés dans un objet {cell: string , tooltip : string}"
+        "showCellsToolTip": "Afficher Tooltip des cellules (par défaut false)",
+        "useTruncate": "Utiliser la troncation dans les titres de colonnes de la table (par défaut false)"
       },
       "filter": {
         "nbFiltersPerLine": "Nombre maximum de filtres à afficher sur une ligne avant de faire un retour à la ligne, par défaut, les filtres prennent la taille disponible avant de faire un retour à la ligne (auto-fill).",
@@ -1158,10 +1136,9 @@
         }
       },
       "generic-dialog": {
-          "description": "<p>Affiche une boîte de dialogue générique avec un contenu personnalisé.</p><p>Afin d'utiliser ce composant, il faut importer BlDialogModule. La méthode 'openGenericDialog' de BlDialogService reçoit en paramètres la boîte de dialogue à afficher et un objet contenant les paramètres de la boîte de dialogue.</p>",
-          "title2": "Créer une boîte de dialogue métier",
-          "desc2": "<p>Pour créer une boîte de dialogue métier, il faut insérer le contenu souhaité dans le composant bl-generic-dialog. Pour cela, il suffit d'ajouter l'attribut bl-generic-dialog__content dans la balise encapsulant notre contenu.</p> <p>Pour les traitements bloquants on peut demander via l'objet WaitDialogModel à ce qu'une dialogue d'attente s'affiche.<br> Une fois le traitement terminé, il faut appeler la méthode closeGenericDialog() du service BlDialogService pour fermer la boîte de dialogue.</p>",
-
+        "description": "<p>Affiche une boîte de dialogue générique avec un contenu personnalisé.</p><p>Afin d'utiliser ce composant, il faut importer BlDialogModule. La méthode 'openGenericDialog' de BlDialogService reçoit en paramètres la boîte de dialogue à afficher et un objet contenant les paramètres de la boîte de dialogue.</p>",
+        "title2": "Créer une boîte de dialogue métier",
+        "desc2": "<p>Pour créer une boîte de dialogue métier, il faut insérer le contenu souhaité dans le composant bl-generic-dialog. Pour cela, il suffit d'ajouter l'attribut bl-generic-dialog__content dans la balise encapsulant notre contenu.</p> <p>Pour les traitements bloquants on peut demander via l'objet WaitDialogModel à ce qu'une dialogue d'attente s'affiche.<br> Une fois le traitement terminé, il faut appeler la méthode closeGenericDialog() du service BlDialogService pour fermer la boîte de dialogue.</p>",
         "input": {
           "openGenericDialogParams": "Paramètres de la méthode openGenericDialog du service BlDialogService",
           "blGenericDialogComponent": "Obligatoire. Le composant englobant le contenu à injecter dans la boîte de dialogue générique.",
@@ -1313,22 +1290,31 @@
           "withExpension": "Activer un footer expansible. boolean , par défaud 'false'. en cours de maintenance"
         }
       },
-      "card-expansion-panel": {
+      "bl-expension-panel": {
         "description": "Cette page présente le composant \"Expension panel\". Cet accordéon peut être intégré dans le footer d'une carte : bl-card > bl-card-footer.",
         "libelle": "Libellé du panneau",
         "content": "Type your name and age",
-        "simple-sample" : "Composant expension panel :",
-        "sample-custom-header" : "Composant expension panel avec un header costumisé :",
-        "sample-under-card" : "Expension panel sous une carte :",
-        "sample-inside-card" : "Expension panel dans une carte : ",
-        "input" : {
+        "simple-sample": "Composant expension panel :",
+        "sample-custom-header": "Composant expension panel avec un header costumisé :",
+        "sample-under-card": "Expension panel sous une carte :",
+        "sample-inside-card": "Expension panel dans une carte : ",
+        "input": {
           "title": "Pour spécifier le titre du card.",
-          "expension-title": "Titre du expension panel, valeur par défaut ( ' ' ).",
+          "expension-title": "Titre de l'expension panel, valeur par défaut ( ' ' ).",
           "expension-description": "Description du expension panel, valeur par défaut ( ' ' ).",
           "titleSytle": "Style css à appliqué sur le titre de l'expension panel.",
           "expentionIcon": "Icone affichée au début de l'expension panel de type IconClassEnum. Facultatif.",
           "iconHeader": "Icon à afficher à la fin de la partie header de l'expension panelde type IconInfos. Facultatif.",
           "titleIcon": "Icon à afficher à la fin du titre de l'expension panel de type IconInfos. Facultatif."
+        },
+        "bl-expension-panel-header": {
+          "input": {
+            "title": "Titre de l'entête de l'expension panel",
+            "description": "Description de l'entête de l'expension panel",
+            "iconStart": "Icon à afficher au début de l'entête de l'expension panel de type IconInfos. Facultatif.",
+            "iconEnd": "Icon à afficher à la fin de l'entête de l'expension panel de type IconInfos. Facultatif.",
+            "titleSytle": "Style css à appliqué sur le titre de l'entête de l'expension panel."
+          }
         }
       },
       "stock-headband": {
@@ -1443,9 +1429,7 @@
       }
     }
   },
-
   "sample": {
-
     "text-field": {
       "title": "Types différents",
       "onBlur-title": "Exemple avec l'implémentation de l'event (onBlurAction) :",
@@ -1477,10 +1461,8 @@
       "exemple3": "Définir une couleur par défaut:",
       "exemple4": "Définir les couleurs des cercles :",
       "exemple4.desc": "Via l'input : ",
-
       "methode1": "Méthode orientée model:",
       "methode1.desc": "Cette méthode consiste à définir la couleur dans la déclaration du",
-
       "methode2": "Méthode orienté template:",
       "methode2.desc": "Cette méthode consiste à définir la couleur dans l'input"
     },
@@ -1489,27 +1471,24 @@
       "expandOne": "Affichage avec ouverture d'un seul chemin dans l'arbre."
     },
     "multi-attachment": {
-      "samples":"Exemples",
+      "samples": "Exemples",
       "doc": {
-        "title1":"Pièce jointe Multiples",
-        "required":"- Le champs est obligatoire :",
+        "title1": "Pièce jointe Multiples",
+        "required": "- Le champs est obligatoire :",
         "required-extentions": "- Les extensions requises dans l'exemple sont :",
-        "maxSize":"- La taille maximal d'un fichier est précisé en input à  1500 ko :",
+        "maxSize": "- La taille maximal d'un fichier est précisé en input à  1500 ko :",
         "maxFilesNum": "- Le nombre de fichiers autorisés est 4 dans cet exemple :",
         "sizeFunc": "- La fonction de convertion de la taille du fichier convertie la taille en Mo :",
-
-        "title2":"Avec personnalisation des message d'erreurs",
-        "costumMsgErrors":"- Désactiver les messages d'erreurs par défaut avec le paramètre suivant :",
-
-        "title3":"Pièce jointe en ReadOnly",
-        "readonly":"- pour activer le mode lecture seul :"
-
+        "title2": "Avec personnalisation des message d'erreurs",
+        "costumMsgErrors": "- Désactiver les messages d'erreurs par défaut avec le paramètre suivant :",
+        "title3": "Pièce jointe en ReadOnly",
+        "readonly": "- pour activer le mode lecture seul :"
       },
-      "required-error":"Veuillez choisir les fichiers requis",
+      "required-error": "Veuillez choisir les fichiers requis",
       "invalid-extentions": "Extension(s) invalide(s)",
       "nbFilesExceeded": "Veuillez ne pas dépasser 2 fichiers"
     },
-    "autocomplete" :{
+    "autocomplete": {
       "withAction": "Avec une action customisé",
       "eventMsg": "Action déclanché pour l'option : ",
       "actionLabel": "Action Customisé",
@@ -1523,18 +1502,15 @@
       "hintEnd": "Hint à afficher en dessous aligné en fin de l'input ",
       "autoCompleteAction": "Action customisé facultatif à ajouter en fin de la liste . type customAction ",
       "autoCompleteActionEvent": "Fonction à déclanché au click sur l'action customisé.",
-
-      "hint" : {
+      "hint": {
         "start": "List de status",
-        "end" : "1/10"
+        "end": "1/10"
       }
-
     },
     "code": {
       "with": "Avec code",
       "without": "Sans code"
     },
-
     "decimal": {
       "rate.placeholder": "Taux à 5 décimales",
       "rate": "Taux",
@@ -1631,7 +1607,6 @@
       "demo.button.recommendation.tense3": "Veillez à ce qu’on arrive toujours à voir l’ensemble des boutons dans le footer quand on scroll sur la page, et qu’il n’y en ait pas certains qui se cachent.",
       "demo.button.recommendation.tense4": "Le projet peut tout aussi décider de supprimer un bouton par manque d’espace si ce bouton se trouve être facultatif.",
       "close": "Fermer",
-
       "openCard": "Ouvrir la carte de navigation",
       "openExemple": " Voir l'exemple",
       "reset": "Terminer",
@@ -1867,7 +1842,6 @@
       "info": {
         "description": "Dialog générique d'information (tout les entrées sont paramétrables)",
         "button": "Ouvrir dialog d'information"
-
       }
     },
     "generic-dialog": {
@@ -1955,7 +1929,6 @@
   "custumValidation": {
     "required": "Custum messages d'erreur required "
   },
-
   "param.customPaginator.itemsPerPageLabel": "Lignes par page",
   "param.customPaginator.firstPageLabel": "Première page",
   "param.customPaginator.lastPageLabel": "Dernière page",

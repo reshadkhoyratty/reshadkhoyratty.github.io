@@ -36,16 +36,6 @@ export class BlSnackbarSampleComponent {
             this.snackBarService.openErrorSnackbar(message, true, 'errorSnackBar_with_close_button');
     }
 
-    public openSuccessCustomSnackBarWithButtonAction(message: string, accessibilityParam: boolean): void {
-        if (accessibilityParam == false)
-            this.snackBarService.openSuccessSnackBar(message, false, 'succesSnackBar_and_action_button', 'Fermer', () => {
-                this.toasterService.success('sample.datatable.event.close')
-            });
-        else {
-            this.snackBarService.openSuccessSnackBar(message, true, 'succesSnackBar_with_close_button_and action_button', 'Fermer', () => {
-                this.toasterService.success('sample.datatable.event.close')
-            });
-        }
-    }
+
 
 }

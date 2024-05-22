@@ -1,9 +1,8 @@
-<h3 class="m-4">{{'pages.variables.card-expansion-panel.simple-sample'|translate}}</h3>
-<bl-expension-panel
-  [testLabelValue] = "'expension_panel'"
-  [expensionTitle]="title"
-  [expensionDescription]="description"
->
+<h3 class="m-4">{{'pages.variables.bl-expension-panel.simple-sample'|translate}}</h3>
+<bl-expension-panel [testLabelValue] = "'expension_panel_1'">
+  <bl-expension-panel-header  [description]="description"
+                              [title]="title">
+  </bl-expension-panel-header>
   <mat-form-field appearance="fill">
     <mat-label testlabel = "expension_panel_label_1">First name</mat-label>
     <input matInput />
@@ -14,17 +13,14 @@
   </mat-form-field>
 </bl-expension-panel>
 
-<h3 class="m-4">{{'pages.variables.card-expansion-panel.sample-custom-header'|translate}}</h3>
-<bl-expension-panel
-  [testLabelValue] = "'expension_panel'"
-  [expensionDescription]="description"
-  [expensionIcon]="IconClassEnum.info_fill"
-  [iconHeader]="iconHeader"
->
-  <ng-template #header>
+<h3 class="m-4">{{'pages.variables.bl-expension-panel.sample-custom-header'|translate}}</h3>
+<bl-expension-panel [testLabelValue] = "'expension_panel_2'">
+  <bl-expension-panel-header  [description]="description"
+                              [iconStart]="IconClassEnum.info_fill"
+                              [iconEnd]="iconHeader">
     <p class="title-style">{{title}}</p>
     <bl-number-chip>9</bl-number-chip>
-  </ng-template>
+  </bl-expension-panel-header>
 
   <mat-form-field appearance="fill">
     <mat-label testlabel = "expension_panel_label_1">First name</mat-label>
@@ -37,7 +33,7 @@
 </bl-expension-panel>
 
 <div class="mb-4">
-  <h3 class="m-4">{{'pages.variables.card-expansion-panel.sample-under-card'|translate}}</h3>
+  <h3 class="m-4">{{'pages.variables.bl-expension-panel.sample-under-card'|translate}}</h3>
   <bl-card [testLabelValue]="'Card_with_expention_panel_card'" class="cardContainer">
     <bl-card-header [title]="'Titre de Carte'" [subTitle]="'sous-titre'" [testLabelValue]="'Card_with_expention_panel_card'"> </bl-card-header>
     <bl-card-body [style]="'m-2'" [testLabelValue]="'Card_with_expention_panel_card'">
@@ -47,10 +43,11 @@
   <div     class="card-with-expension" >
     <bl-expension-panel
       class="card-with-expension"
-      [testLabelValue]="'Card_with_expention_panel'"
-      [expensionTitle]="title"
-      [expensionDescription]="description"
-    >
+      [testLabelValue]="'Card_with_expention_panel'">
+      <bl-expension-panel-header
+        [title]="title"
+        [description]="description">
+      </bl-expension-panel-header>
       <mat-form-field appearance="fill">
         <mat-label testlabel="Card_with_expention_panel_label_1">First name</mat-label>
         <input matInput testlabel="Card_with_expention_panel_input1"/>
@@ -62,7 +59,7 @@
     </bl-expension-panel>
   </div>
 </div>
-<h3 class="m-4">{{'pages.variables.card-expansion-panel.sample-inside-card'|translate}}</h3>
+<h3 class="m-4">{{'pages.variables.bl-expension-panel.sample-inside-card'|translate}}</h3>
 <bl-card testlabel="Card_with_expention_panel" class="cardContainer">
   <bl-card-header [title]="'Histoire de Lorem Ipsum'" [subTitle]="'sous-titre'"> </bl-card-header>
   <bl-card-body [style]="'m-2'" testlabel="Card_with_expention_panel_body">
@@ -73,10 +70,12 @@
   <bl-card-footer>
     <bl-expension-panel
       class="card-with-expension"
-      testlabel="Card_with_expention_panel_footer"
-      [expensionTitle]="title"
-      [expensionDescription]="description"
-    >
+      testlabel="Card_with_expention_panel_footer">
+      <bl-expension-panel-header
+        [title]="title"
+        [description]="description">
+
+      </bl-expension-panel-header>
       <mat-form-field appearance="fill">
         <mat-label>First name</mat-label>
         <input matInput />

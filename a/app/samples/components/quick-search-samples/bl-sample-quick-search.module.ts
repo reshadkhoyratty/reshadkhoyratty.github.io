@@ -35,6 +35,9 @@ import {
     BlQuickSearchMultipleStatutComponent
 } from './bl-abstract-quick-search-multiple-sample/bl-quick-search-multiple-statut.component';
 import {
+    BlQuickSearchMultipleTemplateModeComponent
+} from './bl-abstract-quick-search-multiple-sample/bl-quick-search-multiple-templateMode.component';
+import {
     BlAbstractQuickSearchSampleComponent
 } from './bl-abstract-quick-search-sample/bl-abstract-quick-search-sample.component';
 import {BlQuickSearchStatutComponent} from './bl-abstract-quick-search-sample/bl-quick-search-statut.component';
@@ -47,13 +50,25 @@ import {
 import {SelectsSampleModule} from "../selects-samples/bl-sample-lists.module";
 import {BlQuickSearchSecondStatutComponent} from './bl-abstract-quick-search-sample/bl-quick-search-second-statut.component';
 
+
+import {
+  BlAbstractQuickSearchMultipleWithCdialogComponent
+} from './bl-abstract-quick-search-multiple-cdialog-sample/bl-abstract-quick-search-multiple-cdialog-sample.component';
+import {
+  BlQuickSearchMultipleExampleComponent
+} from './bl-abstract-quick-search-multiple-cdialog-sample/bl-quick-search-multiple-example.component';
+
 const SAMPLE_COMPONENTS = [
     BlAbstractQuickSearchSampleComponent,
     BlQuickSearchStatutComponent,
     BlAbstractQuickSearchMultipleSampleComponent,
     BlQuickSearchMultipleStatutComponent,
   BlAbstractMultiComboSearchSampleComponent,
-    BlQuickSearchSecondStatutComponent
+    BlQuickSearchSecondStatutComponent,
+    BlQuickSearchMultipleTemplateModeComponent,
+  BlAbstractQuickSearchMultipleWithCdialogComponent,
+  BlQuickSearchMultipleExampleComponent
+
 ]
 
 @NgModule({

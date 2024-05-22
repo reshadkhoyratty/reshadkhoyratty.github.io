@@ -73,6 +73,12 @@
   "bl-checkbox.readonly": "Lecture seule",
   "bl-radio.readonly": "Lecture seule",
   "bl-text-field.currency": "€",
+  "bl-notification.date.at": "à",
+  "bl-notification.button.seen": "Marquer comme lu",
+  "bl-notification.button.unseen": "Marquer comme non lu",
+  "bl-notification.button.delete": "Supprimer",
+  "bl-notification.button.open": "Consulter",
+
   "I18N.MAT_PAGINATOR.FIRST_PAGE": "Première page",
   "I18N.MAT_PAGINATOR.ITEMS_PER_PAGE": "Lignes par page",
   "I18N.MAT_PAGINATOR.LAST_PAGE": "Dernière page",
@@ -90,6 +96,8 @@
   "notification.button.consult": "Consulter",
   "notification.button.delete": "Supprimer",
   "notification.button.deleteall": "Tout effacer",
+  "notification.button.seeAll": "Tout afficher",
+
   "notification.button.read": "Marquer comme lu",
   "notification.button.unread": "Marquer comme non lu",
   "notification.text.empty": "Pas de notification",

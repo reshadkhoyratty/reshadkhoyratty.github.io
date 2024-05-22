@@ -1,9 +1,0 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  grid-auto-rows: 40px;
-}
-ul.circle>li {
-  list-style-type: circle;
-}
