@@ -1,0 +1,25 @@
+<form [formGroup]="formGroup">
+  <p>{{'sample.code.with' | translate}}</p>
+  <bl-quick-search-multiple-statut [clearSearch]="false"
+                                   [displayCode]="true"
+                                   [modalTitle]="'Title'"
+                                   [formControl]="formGroup.controls.status1"
+                                   id="statut1"
+                                   [testLabelValue]="'quick-search-multiple_with_code'"
+  ></bl-quick-search-multiple-statut>
+  <p>{{'sample.code.without' | translate}}</p>
+  <bl-quick-search-multiple-statut [displayCode]="false"
+                                   [formControl]="formGroup.controls.status2"
+                                   [withChipset]="true"
+                                   id="statut2"
+                                   [testLabelValue]="'quick-search-multiple_without_code'"
+  ></bl-quick-search-multiple-statut>
+  <p>{{'sample.libelle.read-only' | translate}}</p>
+  <bl-quick-search-multiple-statut [displayCode]="false"
+                                   [formControl]="formGroup.controls.status3"
+                                   [readOnly]="true"
+                                   id="statut3"
+                                   [testLabelValue]="'quick-search-multiple_with_readOnly'"
+  ></bl-quick-search-multiple-statut>
+
+</form>

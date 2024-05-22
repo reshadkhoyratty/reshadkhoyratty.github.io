@@ -1,0 +1,95 @@
+<form [formGroup]="formGroup">
+  <bl-text-field-decimal
+    [allowNegative]="true"
+    [customErrorsMap]="customErrorMap"
+    [formControl]="formGroup.controls.integerWithZero"
+    [id]="'idIntegerWithZero'"
+    [label]="'sample.integer.biggerNumber'"
+    [nbDecimal]="0"
+    [placeholder]="'sample.integer.phoneNumber.placeholder.customExample'"
+    [isZeroAllowedAtTheBeginning]="true"
+    [testLabelValue]="'input1'"
+  >
+  </bl-text-field-decimal>
+
+  <bl-text-field-decimal
+    [allowNegative]="true"
+    [formControl]="formGroup.controls.integerWithoutZero"
+    [id]="'idIntgerWithoutZero'"
+    [label]="'sample.integer.integerWithoutZero'"
+    [nbDecimal]="0"
+    [customErrorsMap]="customErrorMap"
+    [placeholder]="'sample.integer.phoneNumber.placeholder.withoutZeroAtTheBeginning'"
+
+    [testLabelValue]="'input2'"
+  >
+  </bl-text-field-decimal>
+
+  <bl-text-field-decimal #sample
+                         [allowNegative]="true"
+                         [formControl]="formGroup.controls.rate"
+                         [id]="'idMAmount'"
+                         [label]="'sample.decimal.rate'"
+                         [nbDecimal]="5"
+                         [placeholder]="'sample.decimal.rate.placeholder'"
+                         [isZeroAllowedAtTheBeginning]="true"
+                         [separatorOfThousands]="true"
+                         [completeWithZero]="true"
+                         [alignToRight]="true"
+                         [isPercent]="true"
+                         [testLabelValue]="'input3'"
+  >
+  </bl-text-field-decimal>
+
+  <div style="display : inline-flex;">
+    <select #teams (change)="onSelected(teams.value)" [formControl]="formGroup.controls.currency" [attr.testlabel]="'input3' + '_select'"
+            style="border: 10px solid transparent;position: relative;background-color: #f5f5fb;width: 100%; height: 60px;">
+      <option *ngFor="let currency of currencyList; let index = index" [selected]="currency" [value]="currency" [attr.testlabel]="currency + '_option_' + index">
+        {{ currency }}
+      </option>
+    </select>&nbsp;&nbsp;
+    <bl-text-field-decimal #sample
+                           [allowNegative]="false"
+                           [formControl]="formGroup.controls.amountEuro"
+                           [id]="'idMAmountEuro'"
+                           [label]="'sample.decimal.price'"
+                           [nbDecimal]="2"
+                           [placeholder]="'sample.decimal.price.placeholder'"
+                           [alignToRight]="false"
+                           [completeWithZero]="true"
+                           [separatorOfThousands]="true"
+                           [suffixClassName]="iconClassName"
+                           [suffixLabel]="suffixLabel"
+                           [testLabelValue]="'input4'"
+    ></bl-text-field-decimal>
+    <div style="padding-top: 14.5px;background-color: #f5f5fb;height: 60px;">
+    </div>
+  </div>
+  <bl-text-field-decimal #sample
+                         [allowNegative]="false"
+                         [formControl]="formGroup.controls.price"
+                         [id]="'idMAmountEuro'"
+                         [label]="'sample.decimal.price'"
+                         [nbDecimal]="2"
+                         [placeholder]="'sample.decimal.price.placeholder'"
+                         [alignToRight]="false"
+                         [completeWithZero]="true"
+                         [suffixClassName]="iconClassName"
+                         [suffixLabel]="suffixLabel"
+                         [testLabelValue]="'input5'"
+  >
+  </bl-text-field-decimal>
+
+  <bl-text-field-decimal #sample
+                         [allowNegative]="true"
+                         [formControl]="formGroup.controls.amountReadOnly"
+                         [id]="'idMAmountReadOnly'"
+                         [label]="'sample.libelle.read-only'"
+                         [nbDecimal]="2"
+                         [placeholder]="'sample.decimal.rate.placeholder'"
+                         [readOnly]="true"
+                         [appearance]="'fill'"
+                         [testLabelValue]="'input6'"
+  >
+  </bl-text-field-decimal>
+</form>

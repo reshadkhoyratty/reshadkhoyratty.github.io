@@ -1,0 +1,18 @@
+<bl-page-template [pageIcon]="pageIcon" [pageTitle]="pageTitle" >
+  <div body >
+  <bl-window-content-panel class="bl-window-prent-width mb-4">
+        <bl-table
+
+          #table  [compareObject]="compareObject"
+                  [config]="config" [filterComponentsConfig]="filterComponentsConfig"
+                  [filterGroup]="formGroup"
+                  [initialFilter]="defaultFilterValue"
+                  [showSearchField]="showSearchField" [verticalLayout]="true"
+                  [testLabelValue]="'table-example-2'"
+                  id="bl-example-table-sample">
+        </bl-table>
+  </bl-window-content-panel>
+
+
+  </div>
+</bl-page-template>

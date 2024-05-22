@@ -1,0 +1,292 @@
+<bl-page-template [pageIcon]="pageIcon" [pageTitle]="pageTitle">
+  <div body>
+    <bl-stepper #blStepper [editable]="true" [testLabelValue]="'myStepper2'">
+    
+      <bl-step (onInteractedStream)="nextStep(formGroup1)" [stepForm]="formGroup1" [testLabelValue]="'form1'"
+      [title]="stepLabels[0]">
+        <form [formGroup]="formGroup1">
+          <bl-multi-card-template
+            [cardStyle]="'background-color:white;'"
+            [titlesList]="titlesList"
+          >
+            <!-- FIRST FORM --> 
+            
+              <div *blContentSelector>
+              
+                  <div class="mt-1">
+                    <div class="row">
+                      <bl-text-field
+                        [formControl]="formGroup1.controls.label1"
+                        [id]="'1'"
+                        [label]="'sample.libelle.label'"
+                        [maxLength]="15"
+                        [placeholder]="'sample.libelle.placeholder'"
+                        [testLabelValue]="'input1'"
+                        [type]="'text'"
+                      >
+                      </bl-text-field>
+                    </div>
+                    <div class="row">
+                      <bl-list-box
+                        [addNullableOption]="true"
+                        [data]="listData"
+                        [formControl]="formGroup1.controls.listBox1"
+                        [label]="'sample.list.listbox'"
+                        [placeholder]="'sample.list.aucun'"
+                        [testLabelValue]="'listBox1'"
+                      >
+                      </bl-list-box>
+                    </div>
+                  </div>
+                  <h5 class="subtitle border-bottom">
+                    Titre de séparation de la carte
+                  </h5>
+                  <div class="groupFields">
+                    <div class="col-sm-3">
+                      <bl-datepicker
+                        [dateFormat]="'DD/MM/YYYY'"
+                        [dateLocale]="'fr-FR'"
+                        [formControl]="formGroup1.controls.date1"
+                        [id]="'idDate1'"
+                        [label]="'sample.datepicker.label'"
+                        [testLabelValue]="'datepicker1'"
+                        class="form-field"
+                      >
+                      </bl-datepicker>
+                    </div>
+                    <div class="col-sm-3">
+                      <bl-datepicker
+                        [dateFormat]="'DD/MM/YY'"
+                        [dateLocale]="'es-ES'"
+                        [formControl]="formGroup1.controls.date2"
+                        [id]="'idDate2'"
+                        [label]="'sample.datepicker.label'"
+                        [testLabelValue]="'datepicker2'"
+                        class="form-field"
+                      >
+                      </bl-datepicker>
+                    </div>
+                  </div>
+                
+                
+              </div>
+              <!-- Groupe card 2-->
+              <div *blContentSelector>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <bl-text-field
+                      [formControl]="formGroup1.controls.label2"
+                      [id]="'3'"
+                      [label]="'sample.libelle.label3'"
+                      [maxLength]="12"
+                      [placeholder]="'sample.libelle.placeholder'"
+                      [testLabelValue]="'form2_input_3'"
+                      [type]="'text'"
+                    >
+                    </bl-text-field>
+                  </div>
+                  <div class="col-lg-4">
+                    <bl-text-field
+                      [formControl]="formGroup1.controls.label3"
+                      [id]="'4'"
+                      [label]="'sample.libelle.label4'"
+                      [maxLength]="15"
+                      [placeholder]="'sample.libelle.placeholder'"
+                      [testLabelValue]="'form2_input_4'"
+                      [type]="'text'"
+                    >
+                    </bl-text-field>
+                  </div>
+                </div>
+                <div class="row">
+                  <bl-list-box
+                    [addNullableOption]="true"
+                    [data]="listData"
+                    [formControl]="formGroup1.controls.listBox2"
+                    [label]="'sample.list.listbox'"
+                    [placeholder]="'sample.list.aucun'"
+                    [testLabelValue]="'form2_listBox2'"
+                  >
+                  </bl-list-box>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4">
+                    <label class="subtitle">Autres champs</label>
+                    <br>
+                    <bl-checkbox
+                      [formControl]="formGroup1.controls.checkbox1"
+                      [matToolTip]="'Checkbox'"
+                      [testLabelValue]="'form2_checkbox_1'"
+                    >
+                      Checkbox
+                    </bl-checkbox>
+                    <br />
+                    <bl-checkbox
+                      [formControl]="formGroup1.controls.checkbox2"
+                      [matToolTip]="'Checkbox'"
+                      [testLabelValue]="'form2_checkbox_1'"
+                    >
+                      Checkbox
+                    </bl-checkbox>
+                  </div>
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-4">
+
+                   <bl-radio [formControl]="formGroup1.controls.radioBox"
+                   [label]="'Autres champs'"
+                   [listOfOptions]="listRadioBox">
+                   </bl-radio>
+
+                  </div>
+                </div>
+              </div>
+            
+          </bl-multi-card-template>
+        </form>
+        <!-- Costum Actions here -->
+        <div class="d-flex justify-content-end m-2">
+          <div *ngFor="let action of stepperActions ; let index = index " class="actions-step" style="margin-left: 10px">
+              <bl-button  (click)="action.eventEmitter?.emit($event)" [primary]="false" [testLabelValue]="action.testLabelValue? action.testLabelValue:''+'_tab_Action_'"
+              [title]="action.label | translate" ></bl-button>
+          </div>
+          <!-- Button NEXT --> 
+          <bl-button 
+          (click)="nextStep(formGroup1)"
+          [iconClass]="iconNext"
+          [primary]="true"
+          [testLabelValue]="'form1_button_next_step'"
+          style="margin-right: 10px;margin-left: 10px"
+          title="{{ 'sample.button.next' | translate }}"
+          ></bl-button>
+        </div>
+      </bl-step>
+      <bl-step [stepForm]="formGroup2" [testLabelValue]="'form2'" [title]="stepLabels[1]">
+         <div class="d-flex flex-wrap gap-3 mt-3 row justify-content-start">
+          <bl-card [class] = "'cardPosition'" [headerDevider]="true" [title]="'Formulaire étape 2'">
+             <form [formGroup]="formGroup2" class="container">
+              <div class="row">
+                <div class="col-lg-4">
+                  <bl-text-field
+                    [formControl]="formGroup2.controls.label2"
+                    [id]="'3'"
+                    [label]="'sample.libelle.label3'"
+                    [maxLength]="12"
+                    [placeholder]="'sample.libelle.placeholder'"
+                    [testLabelValue]="'form2_input_3'"
+                    [type]="'text'"
+                  >
+                  </bl-text-field>
+                </div>
+                <div class="col-lg-4">
+                  <bl-text-field
+                    [formControl]="formGroup2.controls.label3"
+                    [id]="'4'"
+                    [label]="'sample.libelle.label4'"
+                    [maxLength]="15"
+                    [placeholder]="'sample.libelle.placeholder'"
+                    [testLabelValue]="'form2_input_4'"
+                    [type]="'text'"
+                  >
+                  </bl-text-field>
+                </div>
+              </div>
+              <div class="row">
+                <bl-list-box
+                  [addNullableOption]="true"
+                  [data]="listData"
+                  [formControl]="formGroup2.controls.listBox2"
+                  [label]="'sample.list.listbox'"
+                  [placeholder]="'sample.list.aucun'"
+                  [testLabelValue]="'form2_listBox2'"
+                >
+                </bl-list-box>
+              </div>
+              <div class="row">
+                <div class="col-lg-4">
+                  <p class="subtitle">Autres champs</p>
+                  <bl-checkbox
+                    [formControl]="formGroup2.controls.checkbox1"
+                    [matToolTip]="'Checkbox'"
+                    [testLabelValue]="'form2_checkbox_1'"
+                  >
+                    Checkbox
+                  </bl-checkbox>
+                  <br />
+                  <bl-checkbox
+                    [formControl]="formGroup2.controls.checkbox2"
+                    [matToolTip]="'Checkbox'"
+                    [testLabelValue]="'form2_checkbox_1'"
+                  >
+                    Checkbox
+                  </bl-checkbox>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-4">
+                  <p class="subtitle">Autres champs</p>
+
+                  <mat-radio-group [formControl]="formGroup2.controls.radioBox2" aria-label="Select an option" name="radioBoxGroup">
+                    <mat-radio-button class="mr-2" color="primary" testlabel="RadioBox_option_1" value="1">Radio Button</mat-radio-button>
+                    <mat-radio-button class="mr-2" color="primary" testlabel="RadioBox_option_2" value="2">Radio Button</mat-radio-button>
+                  </mat-radio-group> 
+                 </div>
+                 
+              </div>
+            </form>
+          </bl-card>
+        </div>
+
+        <div class="d-flex gap-2 m-2 mt-4 justify-content-between">
+          <!-- Button BACK -->
+            <div class="justify-content-start"> 
+                <bl-button 
+                (click)="prevStep()"
+                [iconClass]="iconBack"
+                [primary]="false"
+                [testLabelValue]="'form2_button_previous_step'"
+                style="margin-right: 10px"
+                title="{{ 'sample.button.previous' | translate }}"
+                ></bl-button>
+           </div> 
+        <!-- Button NEXT --> 
+            <div class="d-flex justify-content-end">
+                <bl-button 
+                (click)="nextStep(null)"
+                [iconClass]="iconNext"
+                [primary]="true"
+                [testLabelValue]="'form2_button_next_step'"
+                [title]="_nextBtn"
+                style="margin-right: 10px"
+                ></bl-button>
+            </div>
+        </div>
+      </bl-step>
+      <bl-step [testLabelValue]="'form3'" [title]="stepLabels[2]">
+        <div>contenu 3</div>
+
+        <div class="d-flex gap-2 m-2 mt-4 justify-content-between">
+          <!-- Button BACK -->
+             <div class="justify-content-start"> 
+                 <bl-button 
+                 (click)="prevStep()"
+                 [iconClass]="iconBack"
+                 [primary]="false"
+                 [testLabelValue]="'form3_button_previous_step'"
+                 style="margin-right: 10px"
+                 title="{{ 'sample.button.previous' | translate }}"
+                 ></bl-button>
+             </div> 
+         <!-- Finale step button -->
+             <div class="d-flex justify-content-end m-2">
+                 <bl-button
+                 (click)="resetStepper()"
+                 [primary]="true"
+                 [testLabelValue]="'form3_button_next_step'"
+                 [title]="_resetBtn"
+                 style="margin-right: 10px"
+                 ></bl-button>
+             </div>
+         </div>
+      </bl-step>
+    </bl-stepper>
+  </div>
+</bl-page-template>

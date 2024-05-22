@@ -1,0 +1,64 @@
+<bl-window-content-with-right-panel [setFocus]="refSimpleRightPanel" >
+    <bl-window-content-panel>
+        <h1 class="bl-zt-h1" testlabelvalue="Titre_Principal">
+            {{'sample.datatable.table_RightSideFilter' | translate}}
+        </h1>
+        <bl-table #table #tableComponent
+                  [compareObject]="compareObject" [config]="config"
+                  [filterComponentsConfig]="filterComponentsConfig"
+                  [showSearchField]="showSearchField"
+                  [filterGroup]="formGroup" [testLabelValue]="'table-custom-filter'" [verticalLayout]="true"
+                  class="bl-table-prent-width" id="bl-table-custom-filter-sample">
+        </bl-table>
+<!--Table & filtre actions -->
+      <div class="actions-container">
+          <div class="d-flex">
+            <div style="color: red">
+              <p><b> NB :</b></p>
+              <p><b>{{'sample.datatable.compareObjectWarning' | translate}} :</b></p>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div>
+              <p><b>{{'sample.datatable.changeComparing' | translate}}
+                :</b> {{'sample.datatable.changeComparingDesription' | translate}}
+              </p>
+              <p><b>{{'sample.datatable.showSearchFilter' | translate}}
+                :</b> {{'sample.datatable.showSearchFilterDesription' | translate}}
+              </p>
+              <p><b>{{'sample.datatable.setOrRemoveDefaultFilter' | translate}}
+                :</b> {{'sample.datatable.setOrRemoveDefaultFilterDesription' | translate}}
+              </p>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <bl-button (click)="changeComparing()" [primary]="true" [title]="'sample.datatable.changeComparing' | translate"
+                       class="m-1" [testLabelValue]="'changeComparing'"></bl-button>
+            <bl-button (click)="hideOrShowSearchField()" [primary]="true" [title]="'sample.datatable.showSearchFilter' | translate"
+                       class="m-1" [testLabelValue]="'showSearchFilter'"></bl-button>
+            <bl-button (click)="setOrRemoveDefaultFilter()" [primary]="true" [title]="'sample.datatable.setOrRemoveDefaultFilter' | translate"
+                       class="m-1" [testLabelValue]="'setOrRemoveDefaultFilter'"></bl-button>
+          </div>
+      </div>
+        <!--Ignore this part is used to just show the code source of the componenent-->
+    <ng-content></ng-content>
+        <!--Ignore this part is used to just show the code source of the componenent-->
+    </bl-window-content-panel>
+    <bl-window-content-simple-right-panel #refSimpleRightPanel [title]="'Panel de droite'" >
+        <bl-filter-table-panel [tableComponent]="tableComponent">
+        <!-- must contain "tableComponent.search()" and "tableComponent.reset()" -->
+                        <bl-text-field
+                                [formControl]="formGroup.controls.id"
+                                [label]="'sample.datatable.header.matricule'"
+                                [testLabelValue]="'matricule-text-field'"
+                                id="filter_matricule2"
+                        ></bl-text-field>
+                        <bl-text-field
+                                [formControl]="formGroup.controls.nom"
+                                [label]="'sample.datatable.header.lastname'"
+                                [testLabelValue]="'lastname-text-field'"
+                                id="filter_nom2"
+                        ></bl-text-field>
+        </bl-filter-table-panel>
+    </bl-window-content-simple-right-panel>
+</bl-window-content-with-right-panel>

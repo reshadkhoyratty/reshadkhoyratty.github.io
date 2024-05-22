@@ -1,0 +1,23 @@
+<div >
+    <h3>{{'pages.variables.no-data.exemple1'| translate}}</h3>
+    <bl-no-data [title]="title1">{{'pages.variables.no-data.subtitle1'| translate}}</bl-no-data>
+</div>
+
+<div class="mt-4 mb-4">
+    <h3>{{'pages.variables.no-data.exemple2'| translate}}</h3>
+   <p>{{'pages.variables.no-data.card-exemple'| translate}}</p>
+    <bl-card [headerDevider]="true" [testLabelValue]="'card_with_no_data'" [cardStyle]="'width:55%;'">
+
+        <bl-card-header
+        [cardTitleStyle]="'font-weight : 500;font-size:16px!important;'"
+        [title]="cardTitle"
+        [showCloseBtn]="false">
+        </bl-card-header>
+
+            <bl-card-body [testLabelValue]="'content_card_with_no_data'">
+
+                <bl-no-data [title]="title2" [picto]="icon_archive"></bl-no-data>
+            </bl-card-body>
+
+    </bl-card>
+</div>

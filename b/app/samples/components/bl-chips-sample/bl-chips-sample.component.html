@@ -1,0 +1,21 @@
+  <p>Chips avec croix :</p>
+  <bl-chip (clickEvent)="showToastClicChip()" (removeEvent)="showToastClickCroix()" [chipValue]="'Chip1'"  [clickable]="true" [icon_tooltip]="'Supprimer'" ></bl-chip>
+  <br>
+  <br>
+  <p>Chips non cliquable:</p>
+  <bl-chip [canBeDeleted]="true" [chipValue]="'Libelle'" [clickable]="false"></bl-chip>
+  <br>
+  <br>
+  <p>Valeur trop long:</p>
+  <bl-chip [chipValue]="' Rhoshandiatelly-neshiaunneveshenk Koyaanfsquatsiuty Williams'" [canBeDeleted]="true" [clickable]="false"></bl-chip>
+  <br>
+  <br>
+  <p>Chips sélectionnable :</p>
+  <bl-chips-list (optionSelected)="selected($event)" [ariaLabel]="'Liste de poissons'" [options]="options">
+  </bl-chips-list>
+  <br>
+  <p>Chips dans un bl-text-field :</p>
+  <bl-text-field [chips]="chips" [tooltip]="'Supprimer'" [withChips]="true"></bl-text-field>
+
+
+

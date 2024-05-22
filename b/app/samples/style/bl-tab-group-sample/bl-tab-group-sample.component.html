@@ -1,0 +1,24 @@
+<bl-tab-group (selectedTabChange)="selectedTabChange($event)" [selectedIndex]="1" [tabsNumber]="2">
+    <bl-tab [testLabelValue]="'test-label1'"  [title]="'First Tab'">
+        First view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label2'"  [title]="'Second Tab'">
+        Second view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label3'" [title]="'Thrid Tab'" >
+        Thrid view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label4'"  [title]="'Fourth Tab'">
+        Fourth view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label5'" [title]="'Fifth Tab'" >
+        Fifth view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label6'"  [title]="'Sixth Tab'">
+        Sixth view content
+    </bl-tab>
+    <bl-tab [testLabelValue]="'test-label7'" [title]="'Seventh Tab'" >
+        Seventh view content
+    </bl-tab>
+    <bl-tab-actions [actionsList]="actionsList"></bl-tab-actions>
+</bl-tab-group>

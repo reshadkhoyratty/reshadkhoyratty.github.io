@@ -1,0 +1,27 @@
+<form [formGroup]="formGroup">
+  <div>
+      <bl-list-box (dblclick)="addOutline()" (selectableListChangeEvent)="changeStyle()" [appearance]="appearanceSelected" [attr.testlabel]="'list-box'+'_matformfield'"
+                  [data]="lstAppearance"
+                  [formControl]="formGroup.controls.style"
+                  [label]="'pages.style.matformfield.apply.title'" class="w-25">
+      </bl-list-box>
+  </div>
+  <div>
+      <bl-month-picker [appearance]="appearanceSelected"
+                       [attr.testlabel]="'month-picker'+'_matformfield'"
+                       [formControl]="formGroup.controls.period"
+                       [label]="'pages.style.matformfield.month-picker'"
+                       >
+      </bl-month-picker>
+  </div>
+  <div >
+      <bl-autocomplete
+      [appearance]="appearanceSelected"
+      [attr.testlabel]="'autocomplete'+'_matformfield'"
+      [data]="lst"
+      [formControl]="formGroup.controls.autocomplete"
+      [label]="'pages.style.matformfield.autocomplete'"
+      >
+      </bl-autocomplete>
+  </div>
+</form>

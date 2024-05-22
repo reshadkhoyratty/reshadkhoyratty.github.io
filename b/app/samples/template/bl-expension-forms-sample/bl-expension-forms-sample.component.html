@@ -1,0 +1,128 @@
+<bl-forms-panel [pageTitle]="'Titre personnalisé'"
+                [pageIcon]="pageIcon"
+                [panelTitles]="panelTitles"
+                [onClosePage]="getToPreviousPage"
+                [activeExpandAll]="true"
+                [iconsHeader]="iconsHeader">
+
+  <form [formGroup]="formGroup" *blFormSelector>
+    <div class="row">
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label1"
+                       [id]="'1'"
+                       [label]="'sample.libelle.label'"
+                       [maxLength]="15"
+                       [testLabelValue]="'input1'"
+                       [placeholder]="'sample.libelle.placeholder'"
+                       [type]="'text'">
+        </bl-text-field>
+      </div>
+      <div class="col-lg-4">
+        <bl-text-field [displaySearch]="true"
+                       [formControl]="formGroup.controls.label2"
+                       [id]="'2'"
+                       [label]="'sample.libelle.search'"
+                       [maxLength]="400"
+                       [testLabelValue]="'input2'"
+                       [placeholder]="''"
+                       [type]="'search'">
+        </bl-text-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label3"
+                       [id]="'3'"
+                       [label]="'sample.libelle.read-only'"
+                       [testLabelValue]="'input3'"
+                       [readOnly]=true>
+        </bl-text-field>
+      </div>
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label4"
+                       [id]="'4'"
+                       [label]="'sample.libelle.uppercase'"
+                       [upperCase]="true"
+                       [testLabelValue]="'input4'"
+        >
+        </bl-text-field>
+      </div>
+    </div>
+
+  </form>
+  <div *blFormSelector>
+    <div class="row">
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label5"
+                       [id]="'5'"
+                       [label]="'sample.libelle.password'"
+                       [type]="'password'"
+                       [testLabelValue]="'input5'"
+        >
+        </bl-text-field>
+      </div>
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label6"
+                       [id]="'6'"
+                       [label]="'sample.libelle.number'"
+                       [type]="'number'"
+                       [testLabelValue]="'input6'">
+        </bl-text-field>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <bl-text-field [formControl]="formGroup.controls.label7"
+                       [required]="true"
+                       [customErrorsMap]="customErrorsMap"
+                       [id]="'7'"
+                       [label]="'sample.libelle.erreurs'"
+                       [maxLength]="10"
+                       [placeholder]="'sample.libelle.erreurs'"
+                       [type]="'text'"
+                       [testLabelValue]="'input7'"
+        >
+        </bl-text-field>
+      </div>
+    </div>
+  </div> <div *blFormSelector>
+  <div class="row">
+    <div >
+      <bl-checkbox
+        [formControl]="formGroup.controls.checkbox1"
+        [matToolTip]="'Checkbox'">
+        Salaire de base
+      </bl-checkbox>
+      <br>
+      <bl-checkbox
+        [formControl]="formGroup.controls.checkbox2"
+        [matToolTip]="'Checkbox'">
+        Avantage en nature
+      </bl-checkbox>
+    </div>
+  </div>
+</div>
+  <form *blFormSelector>
+    Le journal sera modifié après la validation de l'ensemble des champs
+  </form>
+
+  <div footer class="d-flex justify-content-end">
+    <bl-button
+      (click)="onSubmitForm()"
+      title="{{ 'sample.button.save' | translate }}"
+      [primary]="true"
+      type="submit"
+      [disabled]="formGroup.invalid"
+      [testLabelValue]="'save_action'"
+      style="margin-right: 10px;"
+    ></bl-button>
+
+    <bl-button
+      (click)="cancelAction()"
+      title="{{ 'sample.button.rollback' | translate }}"
+      [primary]="false"
+      [testLabelValue]="'cancel_action'"
+    ></bl-button>
+  </div>
+</bl-forms-panel>
+

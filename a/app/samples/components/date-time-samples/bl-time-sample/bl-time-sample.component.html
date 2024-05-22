@@ -1,0 +1,18 @@
+<div class="m-2">
+
+  <h2 id="usage" class="anchor border-bottom bl-zt-h2 mt-4">Utilisation</h2>
+  <span [innerHTML]= "'pages.time.doc.usage' | translate " class="mat-h3"></span>
+  <br>
+
+  <bl-time [label]="'Heure'"
+           [customErrorsMap]="customErrorMap"
+           [placeholder]="'13:45'" [formControl]="formGroup.controls.inputTime" [testLabelValue]="'time1'"></bl-time>
+  <br>
+  <span [innerHTML]= "'pages.variables.radio.readonly' | translate " class="mat-h3"></span>
+  <br>
+  <bl-time [readOnly]="true" [label]="'Heure'" [placeholder]="'13:45'" [formControl]="formGroup.controls.inputTime2" [testLabelValue]="'time1'"></bl-time>
+
+  <h2 id="accessibilite" class="anchor border-bottom mt-4 bl-zt-h2">Accessibilité</h2>
+  <span [innerHTML]= "'pages.time.doc.access' | translate " class="mat-h3"></span>
+
+</div>

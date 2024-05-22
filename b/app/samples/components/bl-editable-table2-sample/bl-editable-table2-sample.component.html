@@ -1,0 +1,87 @@
+<div class="d-flex flex-column wide-container">
+
+<section>
+<bl-editable-table2   #editableTable2Component [cols]="cols2"
+                      [i18nAdd]="'bl-common.add'"
+                      [tableFormArray]="tableFormArray"
+                      [testLabelValue]="'liste_editable'"
+                      [title]="'Titre de la liste éditable'"
+                      style="min-width: fit-content;"
+                      (afterAddRow)="afterAddRow($event)"
+                      (afterNewRowDeleted)="afterNewRowDeleted()"
+                      (onChangeAddForm)="onChangeAddForm($event)">
+      <!-- Premiere colonne -->
+    <ng-template columnField="id" let-control="control" let-formGroup="formGroup">
+      <bl-text-field [formControl]="control"
+        [id]="'id_'+ getRandomNumber()"
+        [label]="control.parent === this.editableTable2Component.addForm?'Id':''"
+        [maxLength]="15"
+        [testLabelValue]="testLabelValue + '_row_' + control?.parent?.controls?.rowNumber?.value +'_column_1'"
+        [required]="true"
+        [minLength]="3"
+        [placeholder]="'Id *'"
+        [type]="'text'"
+        [appearance]="'fill'"
+        [customErrorsMap]="customErrorsMap"
+        [classStyle]="'no-underline'"
+        class="w-100">
+      </bl-text-field>
+    </ng-template>
+
+    <!-- Deuxième colonne -->
+    <ng-template columnField="name" let-control="control" >
+      <bl-text-field [formControl]="control"
+        [id]="'name_'+ getRandomNumber()"
+        [label]="control.parent === this.editableTable2Component.addForm?'Libellé de la fonctionnalité':''"
+        [testLabelValue]="testLabelValue + '_row_' + control?.parent?.controls?.rowNumber?.value +'_column_2'"
+        [required]="true"
+        [placeholder]="'Libellé de la fonctionnalité *'"
+        [type]="'text'"
+        [appearance]="'fill'"
+        [customErrorsMap]="customErrorsMap"
+        [hideRequiredStar]="true"
+        [classStyle]="'no-underline'"
+        class="w-100">
+      </bl-text-field>
+    </ng-template>
+
+    <!-- Troisième colonne -->
+    <ng-template columnField="date" let-control="control" >
+      <bl-datepicker
+                   [dateFormat]="'DD/MM/YY'"
+                   [formControl]="control"
+                   [id]="'date_'+ getRandomNumber()"
+                   [label]="control.parent === this.editableTable2Component.addForm?'Date ref.':''"
+                   [placeholder]="'Date ref. *'"
+                   [testLabelValue]="testLabelValue + '_row_' + control?.parent?.controls?.rowNumber?.value +'_column_3'"
+                   [customErrorsMap]="customErrorsMapDate"
+                   class="d-grid"
+                   [hideRequiredStar]="true"
+                   >
+      </bl-datepicker>
+    </ng-template>
+    <!-- Quatrième colonne -->
+    <ng-template columnField="licence" let-control="control" >
+      <bl-list-box
+      [id]="'licence_'+ getRandomNumber()"
+      [data]="options"
+      [displayCode]="false"
+      [formControl]="control"
+      [label]="control.parent === this.editableTable2Component.addForm?'Soumise à licence':''"
+      [placeholder]="'Soumise à licence'" style="display:contents"
+      [required]="true"
+      [appearance]="'fill'"
+      [testLabelValue]="testLabelValue + '_row_' + control?.parent?.controls?.rowNumber?.value +'_column_4_select'"
+      [hideRequiredStar]="true"
+      >
+    </bl-list-box>
+    </ng-template>
+  </bl-editable-table2>
+
+</section>
+
+<div class="m-2 d-flex justify-content-end">
+  <bl-button [title]="'sample.button.save'" (clickEvent)="saveAddedForm()"></bl-button>
+</div>
+
+</div>

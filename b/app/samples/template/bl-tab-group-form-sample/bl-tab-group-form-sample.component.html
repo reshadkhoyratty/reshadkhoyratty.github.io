@@ -1,0 +1,62 @@
+
+<bl-page-template [pageIcon]="pageIcon"
+    [pageTitle]="'sample.tab-group-form.title'| translate">
+    <div body>
+        <bl-tab-group [tabsNumber]="2">
+                    <bl-tab [title]="'sample.tab-group-form.fist-tab' | translate" >
+
+                        <bl-card [headerDevider]="false" [title]="'sample.tab-group-form.form-title' | translate">
+                            <form [formGroup]="formGroup1" >
+                                <div class="row">
+                                        <bl-text-field [formControl]="formGroup1.controls.label1"
+                                                    [id]="'1'"
+                                                    [label]="'sample.libelle.label'"
+                                                    [maxLength]="15"
+                                                    [testLabelValue]="'fomr1_input_1'"
+                                                    [placeholder]="'sample.libelle.placeholder'"
+                                                    [type]="'text'">
+                                        </bl-text-field>
+                                </div>
+                                <div class="row">
+                                        <bl-text-field [formControl]="formGroup1.controls.label2"
+                                                    [id]="'2'"
+                                                    [label]="'sample.libelle.label'"
+                                                    [maxLength]="12"
+                                                    [testLabelValue]="'fomr1_input_2'"
+                                                    [placeholder]="'sample.libelle.placeholder'"
+                                                    [type]="'text'">
+                                        </bl-text-field>
+                                  </div>
+                                  <p class="subtitle"> Titre de séparation interne à la carte </p>
+                                  <mat-divider></mat-divider>
+                                  <div class="row mt-4">
+                                      <div class="col-lg-4">
+                                          <bl-datepicker [dateFormat]="'DD/MM/YYYY'"
+                                          [dateLocale]="'fr-FR'"
+                                          [formControl]="formGroup1.controls.date1"
+                                          [id]="'idDate1'"
+                                          [label]="'sample.datepicker.label'"
+                                          [testLabelValue]="'fomr1_datepicker_1'"
+                                          ></bl-datepicker>
+                                      </div>
+                                  </div>
+                                  <div class="row">
+                                      <bl-list-box [addNullableOption]="true"
+                                          [data]="listData"
+                                          [formControl]="formGroup1.controls.listBox"
+                                          [label]="'sample.list.listbox'" [placeholder]="'sample.list.aucun'"
+                                          [testLabelValue] = "'fomr1_listBox'"
+                                          >
+                                      </bl-list-box>
+                                  </div>
+                              </form>
+                        </bl-card>
+                       
+                    </bl-tab>
+                    <bl-tab [title]="'sample.tab-group-form.second-tab' | translate" >
+                        Second view content
+                    </bl-tab>
+                    <bl-tab-actions [actionsList]="actionsList"></bl-tab-actions>
+        </bl-tab-group>
+    </div>
+</bl-page-template>

@@ -1,0 +1,10 @@
+.button-container{
+  display: flex;
+  justify-content: flex-start;
+  height: max-content;
+  flex-wrap: wrap;
+>bl-button{
+  margin-left: 12px;
+  margin-bottom: 5px;
+}
+}

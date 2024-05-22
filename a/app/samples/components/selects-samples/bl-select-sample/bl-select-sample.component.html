@@ -1,0 +1,69 @@
+<div class="justify-content-left">
+  <h4>{{'pages.select.simple-list' | translate}}</h4>
+  <div class="item-ex ">
+    <form [formGroup]="formGroup" class="container-form">
+      <div class="item-form">
+        <h6>Mat-Select</h6>
+
+        <bl-list-box
+          [addNullableOption]="true"
+          [data]="values"
+          [formControl]="formGroup.controls.listBox"
+          [label]="'sample.list.listbox'"
+          [placeholder]="'sample.list.all'"
+          [styleCss] = "'width : 40%;'"
+          [testLabelValue]="'simple_listBox'"
+        >
+
+        </bl-list-box>
+
+      </div>
+      <div class="item-form">
+        <h4>{{'pages.select.multi-select-list' | translate}}</h4>
+        <mat-form-field [attr.testlabel]="'listBox_with_mutliple_selection'" appearance="fill">
+          <mat-label  [attr.testlabel]="'listBox_with_mutliple_selection_label'">Etat</mat-label>
+          <mat-select #selectState  [attr.testlabel]="'listBox_with_mutliple_selection_select'" [formControl]="formGroup.controls.etat" multiple>
+            <div class="select-all">
+              <mat-checkbox (change)="toggleAllStatesSelection()"
+                            [(ngModel)]="allStatesSelected" [attr.testlabel]="'listBox_with_mutliple_selection_checkbox'"
+                            [formGroup]="formGroup"
+                            [ngModelOptions]="{standalone: true}"
+                            color="primary"
+                            >{{allStatesSelectedText}}</mat-checkbox>
+            </div>
+            <mat-option (click)="optionStateClick()" *ngFor="let state of states ; let index = index" [attr.testlabel]="'listBox_with_mutliple_selection_option_' + index" [value]="state">
+              {{ state }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="item-form">
+        <h4>{{'pages.select.select-list-with-search' | translate }} </h4>
+
+          <bl-select-search
+            [formControl]="formGroup.controls.natureActes"
+            [label]="'Nature actes'"
+            [options]="naturesActesOptions"
+            [styleCss] = "'width : 40%;'"
+            [testLabelValue]="'select_search'"
+            [value]="selectedOption"
+          >
+          </bl-select-search>
+      </div>
+      <div class="item-form">
+        <h4>{{'pages.select.select-list-in-group' | translate}}</h4>
+        <p>{{'pages.select.select-list-IG-desc' | translate}}</p>
+        <bl-select-group-search [formControl]="formGroup.controls.classification.value" [hideTooltipOptions]="false"
+                                  [label]="'ClassificationX'"
+                                  [optionGroups]="classificationsOptionGroups"
+                                  [readOnly]="false"
+                                  [styleCss] = "'width : 40%;'"
+                                  [testLabelValue]="'select_group_search'"
+                                  >
+          </bl-select-group-search>
+      </div>
+    </form>
+  </div>
+</div>
+<h3 class="anchor border-bottom mt-4 bl-zt-h3" id="accessibilite">Accessibilité</h3>
+<p>{{'pages.select.accessibility-info' | translate}}</p>

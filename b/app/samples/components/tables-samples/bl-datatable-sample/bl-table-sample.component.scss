@@ -1,0 +1,21 @@
+.filter-field {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: 235px;
+}
+
+.dialogJson {
+  min-height: calc(80vh - 5rem);
+  margin-top: 3.125rem;
+
+  .mat-dialog-content {
+    overflow: auto;
+    max-height: unset !important;
+    padding-bottom: 5px !important;
+  }
+}
+
+.action-button {
+  text-align: right;
+  margin: 1rem
+}

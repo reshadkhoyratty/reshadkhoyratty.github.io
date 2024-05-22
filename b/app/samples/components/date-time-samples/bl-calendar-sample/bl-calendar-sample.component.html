@@ -1,0 +1,17 @@
+<form [formGroup]="formGroup">
+    <div class="row">
+        <div class="col-3">
+            <h6>{{'sample.calendar.simple' | translate}}</h6>
+            <bl-calendar [formControl]="formGroup.controls.calendar1" [selectCurrentDay]="false" [testLabelValue] = "'simple_calendar1'"></bl-calendar>
+        </div>
+        <div class="col-3">
+            <h6>{{'sample.calendar.multiple' | translate}}</h6>
+            <bl-calendar [formControl]="formGroup.controls.calendar2" [multipleSelection]="true" [selectCurrentDay]="false" [testLabelValue] = "'multiple_calendar2'"></bl-calendar>
+        </div>
+        <div class="col-3">
+            <h6>{{'sample.calendar.range' | translate}}</h6>
+            <bl-calendar [formControl]="formGroup.controls.calendar3" [rangeSelection]="true" [selectCurrentDay]="false" [testLabelValue] = "'range_calendar3'"></bl-calendar>
+        </div>
+    </div>
+</form>
+

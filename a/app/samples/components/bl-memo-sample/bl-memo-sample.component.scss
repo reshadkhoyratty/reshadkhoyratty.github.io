@@ -1,0 +1,17 @@
+.exampleCardContainer{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: var(--navbar-shadow);
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; width: 70%
+
+}
+.memoComponent{
+  flex-basis: calc(50% - 10px); /* Set the width of each item to 50% minus some margin/padding */
+ padding-right:5px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}

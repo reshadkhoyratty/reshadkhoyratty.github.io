@@ -1,0 +1,70 @@
+<div class="m-4" style="width: 95%">
+    <h3 class="mb-4">Exemple de carte minimale :</h3>
+
+    <bl-card [body]="simpleBody" [cardStyle]="cardStyle" [testLabelValue]="'Simple_card'"></bl-card>
+    <bl-code-tab [codeTabs]="simpleCardCode" testlabel="code_exemple_1"></bl-code-tab>
+
+    <h3 class="mt-4">Exemple de carte complexe :</h3>
+
+    <bl-card [avatarImg]="avatarImgUrl"
+            [body]="longBody"
+            [cardActions]="cardActions"
+            [cardStyle]="cardStyle2"
+            [imgBody]="imgBody"
+            [subTitle]="subTitle"
+            [headerDevider]="false"
+            [testLabelValue]="'Complex_Card'"
+            [title]="cardTitle">
+    </bl-card>
+    <bl-code-tab [codeTabs]="complexCardCode" testlabel="code_exemple_2"></bl-code-tab>
+
+    <h3 class="mt-4 mb-4">Entête de carte avec bouton de fermeture :</h3>
+
+    <bl-card (onClose)="onCloseFun($event)"
+             [body]="cardBody3"
+             [footer]="cardFooter"
+             [headerDevider]="true"
+             [showCloseBtn]="true"
+             [subTitle]="subTitle3"
+             [testLabelValue]="'Close_Card'"
+             [title]="cardTitle3">
+    </bl-card>
+
+    <bl-code-tab [codeTabs]="exempleCardCode3" testlabel="code_exemple_3"></bl-code-tab>
+
+    <h3 class="mt-4 mb-4">Exemple d'implémentation personalisé d'une carte : </h3>
+
+    <bl-card [headerDevider]="true" [testLabelValue]="'Customised_card'">
+        <bl-card-header
+        (onCloseEvent)="onCloseFun($event)"
+        [avatarImg]="avatarImgUrl"
+        [showCloseBtn]="true"
+        [subTitle]="subTitle3" [testLabelValue]="'Customised_card'"
+        [title]="cardTitle3"
+        >
+        </bl-card-header>
+        <bl-card-body [style] ="'m-2'" [testLabelValue]="'Customised_card'">
+            <span>Contenue spécifique ...</span>
+          <bl-card-actions [class]="'mb-2'">
+            <bl-button (click)="onShare($event)" [id]="'share_btn'" [primary]="false" 
+                [testLabelValue]="'_button_share'" [title]="'SHARE'">
+            </bl-button>
+          </bl-card-actions>
+        </bl-card-body>
+        <bl-card-footer [testLabelValue]="'Customised_card'">Footer</bl-card-footer>
+
+    </bl-card>
+
+    <bl-code-tab [codeTabs]="exempleCardCode4" testlabel="code_exemple_4"></bl-code-tab>
+
+
+    <bl-card [headerDevider]="true" [testLabelValue]="'Customised2_card'" [title]="'Coordonnées contact'">
+        <form class="mt-3">
+            <bl-text-field [label]="'Nom'" [placeholder]="'Nom'" testlabel = "Customised2_card_text_field"></bl-text-field>
+        </form>
+    </bl-card>
+
+    <bl-code-tab [codeTabs]="exempleCardCode5" testlabel="code_exemple_4"></bl-code-tab>
+
+
+</div>

@@ -1,0 +1,55 @@
+<form [formGroup]="formGroup">
+    <div class="col-3">
+    <mat-form-field [attr.testlabel]="'formatList'" style="margin-right: 2rem">
+        <mat-select (selectionChange)="resetDatePicker()" [attr.testlabel]="'formatList' + '_select'" [formControl]="formGroup.controls.format">
+            <mat-option *ngFor="let format of formatList ; let index = index" [attr.testlabel]="'formatList' + '_option_' + index" [value]="format">
+                {{ format }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <mat-form-field [attr.testlabel]="'localeList'">
+        <mat-select (selectionChange)="resetDatePicker()" [attr.testlabel]="'localeList' + '_select'" [formControl]="formGroup.controls.locale">
+            <mat-option *ngFor="let locale of localeList ; let index = index" [attr.testlabel]="'localeList' + '_option_' + index" [value]="locale">
+                {{ locale }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <bl-datepicker-range [customErrorsMap]="customErrorsMap"
+                   [dateFormat]="formGroup.controls.format.value"
+                         [dateLocale]="formGroup.controls.locale.value"
+                   [endDate]="formGroup.controls.endDate" [id]="'idDate'"
+                   [label]="'sample.datepickerrange.label'"
+                   [startDate]="formGroup.controls.startDate"
+                   [testLabelValue]="'datepickerrange'">
+    </bl-datepicker-range>
+    <bl-datepicker-range [dateFormat]="formGroup.controls.format.value"
+                         [dateLocale]="formGroup.controls.locale.value"
+                         [endDate]="formGroup.controls.endDateReadOnly" [id]="'idDate'"
+                         [label]="'sample.datepickerrange.label'"
+                         [readOnly]="true"
+                         [startDate]="formGroup.controls.startDateReadOnly"
+                         [testLabelValue]="'datepickerrange'">
+    </bl-datepicker-range>
+
+
+    </div>
+
+
+<p>{{'sample.datepickerrange.limitRange_doc' | translate}}</p>
+
+<div class="col-3">
+   <bl-datepicker-range [dateFormat]="formGroup.controls.format.value"
+                   [dateLocale]="formGroup.controls.locale.value"
+                   [endDate]="formGroup.controls.endDateConstraint" [id]="'idDate'"
+                   [maxRange]="maxDate"
+                   [minRange]="minDate"
+                   [placeholderStartDdate]="'date debut'"
+                   [placeholderEndDdate]="'date fin'"
+                   [blHint]="'MM/DD/YYYY – MM/DD/YYYY'"
+                   [label]="'Entrez une plage de dates'"
+                   [startDate]="formGroup.controls.startDateConstraint"
+                   [testLabelValue]="'datepickerrange'">
+    </bl-datepicker-range>
+</div>
+</form>
+

@@ -1,0 +1,80 @@
+<p>{{'sample.vertical.default' | translate}}</p>
+<div class="d-flex justify-content-between align-items-center item align-middle">
+<bl-vertical-menu  [data]="data" [listAction]="lstAction" [testLabelValue]="'vertical_Menu1'">
+</bl-vertical-menu>
+</div>
+
+<p>{{'sample.vertical.smallIcon' | translate}}</p>
+<div class="d-flex justify-content-between align-items-center item align-middle">
+<bl-vertical-menu  [data]="data" [listAction]="lstAction" [small]="true" [testLabelValue]="'vertical_Menu1'">
+</bl-vertical-menu>
+</div>
+<br>
+<p>{{'sample.vertical.withMatcard' | translate}}</p>
+        <div class="container">
+        <div class="row">
+        <div class="col">
+           <p>{{'sample.vertical.changeInAllCards' | translate}}</p>
+            <mat-card-content *ngFor="let datum of data" style="margin-top: 10px; margin-bottom: 10px;">
+                <mat-card-content  class="matContent">
+                    <div class="border-styles">
+                        <div class="flex-container mt-2">
+                            <bl-icon [color]="'var(--primary-color)'" [iconClassName]="'clock'" [size]="0">
+                                <span class="note-created-date">
+                                    {{ this.date | date :'EEEE.dd/MM/yyyy' }}
+                                </span>
+                            </bl-icon>
+                                
+                            <div [ngClass]="'buttonPosition-mobile'">
+                                <bl-vertical-menu [data]="datum" [listAction]="lstAction" [testLabelValue]="'vertical_Menu1'"></bl-vertical-menu>
+                            </div>
+                        </div>
+                        <mat-card-title class="flex-row justify-content-between">
+                            <div class="flex-column gap-10">
+                                <div class="flex-row flex-wrap align-items-center gap-10">
+                                    <div class="note-title-thumbnail">{{ 'sample.vertical.matcardState' | translate }}</div>
+                                    <span class="note-title-created-by">{{ datum.label }}</span>
+                                </div>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-content class="matContent">
+                            <span class="note-text">{{ datum.data }}</span>
+                        </mat-card-content>
+                    </div>
+                </mat-card-content>
+            </mat-card-content>
+        </div>
+        <div class="col">
+            <p>{{'sample.vertical.changeInTouchedCard' | translate}}</p>
+            <mat-card-content *ngFor="let datum of data2" style="margin-top: 10px; margin-bottom: 10px;" >
+                <mat-card-content  class="matContent">
+                    <div class="border-styles">
+                        <div class="flex-container mt-2">
+                            <bl-icon [color]="'var(--primary-color)'" [iconClassName]="'clock'" [size]="0">
+                                <span class="note-created-date">
+                                    {{ this.date | date :'EEEE.dd/MM/yyyy' }}
+                                </span>
+                            </bl-icon>
+                            <div [ngClass]="'buttonPosition-mobile'">
+                                <bl-vertical-menu [data]="datum" [listAction]="datum.blActions" [small]="true"
+                                 [testLabelValue]="'vertical_Menu1'"></bl-vertical-menu>
+                            </div>
+                        </div>
+                        <mat-card-title class="flex-row justify-content-between">
+                            <div class="flex-column gap-10">
+                                <div class="flex-row flex-wrap align-items-center gap-10">
+                                    <div class="note-title-thumbnail">{{ 'sample.vertical.matcardState' | translate }}</div>
+                                    <span class="note-title-created-by">{{ datum.label }}</span>
+                                </div>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-content class="matContent">
+                            <span class="note-text">{{ datum.data }}</span>
+                        </mat-card-content>
+                    </div>
+                </mat-card-content>
+            </mat-card-content>
+
+        </div>
+    </div>
+</div>

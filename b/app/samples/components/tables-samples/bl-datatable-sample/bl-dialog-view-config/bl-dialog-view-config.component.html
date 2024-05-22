@@ -1,0 +1,8 @@
+<h2 mat-dialog-title >
+    {{ 'sample.datatable.title_config' | translate }}
+    <span (blCloseEvent)="close()" blCloseCross></span>
+    <span class="copy_icone"><bl-icon (click)="copyConf()" [iconClassName]="'copy'" [title]="'sample.datatable.copy_config' | translate"></bl-icon></span>
+</h2>
+<mat-dialog-content>
+    <pre><code [highlight]="data | json" [lang]="['json']"></code></pre>
+</mat-dialog-content>

@@ -1,0 +1,12 @@
+<form [formGroup]="formGroup">
+    <bl-search-statut [formControl]="formGroup.controls.status1"
+                      id="statut1"
+                      [testLabelValue]="'search1'"
+    ></bl-search-statut>
+    <p>{{'sample.libelle.read-only' | translate}}</p>
+    <bl-search-statut [formControl]="formGroup.controls.status2"
+                      [readOnly]="true"
+                      id="statut2"
+                      [testLabelValue]="'search_with_readOnly'"
+    ></bl-search-statut>
+</form>

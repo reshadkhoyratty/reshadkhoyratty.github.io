@@ -1,0 +1,40 @@
+
+<bl-callout class="mb-2" [title]="'Information title'" [calloutClass]="'information'"  [text]="textDefault"
+            [testLabelValue]="'Callout2'">
+</bl-callout>
+<bl-callout class="mb-2" [title]="'Success title'" [calloutClass]="'success'" [text]="textDefault"
+            [testLabelValue]="'Callout3'">
+</bl-callout>
+<bl-callout class="mb-2" [title]="'Warning title'" [calloutClass]="'warning'" [text]="textDefault"
+            [testLabelValue]="'Callout4'">
+</bl-callout>
+<bl-callout class="mb-2" [title]="'Error title'" [calloutClass]="'error'" [text]="textDefault"
+            [testLabelValue]="'Callout5'">
+</bl-callout>
+<bl-callout class="mb-2" [title]="'Help Information Title'" [calloutClass]="'default'" [contentMode]="true"></bl-callout>
+
+{{'sample.callout.demo.dynamic' | translate}}
+
+<bl-callout class="mb-2" [title]="'Help Information Title'" [calloutClass]="'information'" [contentMode]="true"
+
+            [testLabelValue]="'Callout1'" >
+    <div style="display: flex; width: 100%; justify-content: center">
+        <span > Dynamic content |</span>
+
+        <p>this content is a paragraph</p>
+    </div>
+</bl-callout>
+{{'sample.callout.demo.withoutPicto' | translate}}
+<bl-callout class="mb-2" [title]="'Error title'" [calloutClass]="'error'" [text]="textDefault" [enablePicto]="false"
+            [testLabelValue]="'Callout6'">
+</bl-callout>
+{{'sample.callout.demo.withoutTitle' | translate}}
+<bl-callout class="mb-2" [text]="textDefault"
+            [testLabelValue]="'Callout7'">
+</bl-callout>
+{{'sample.callout.demo.withoutText' | translate}}
+<bl-callout class="mb-2" [title]="'Title'"
+            [testLabelValue]="'Callout8'">
+</bl-callout>
+{{'sample.callout.demo.customIcon' | translate}}
+<bl-callout [calloutClass]="'error'" [customIcon]="'ph ph-bird'" [title]="'custom icon'"></bl-callout>

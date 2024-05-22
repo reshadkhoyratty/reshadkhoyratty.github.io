@@ -1,0 +1,13 @@
+.img-picker-sample{
+  width: 250px;
+  height: 250px;
+}
+
+.img-container:hover .btn-img {
+  visibility: visible;
+}
+
+.btn-img {
+  visibility: hidden;
+  margin-top: 64px;
+}

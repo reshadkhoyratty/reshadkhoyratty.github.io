@@ -1,0 +1,16 @@
+<bl-notification
+        (consultItemEvent)="consultItem($event)"
+        (deleteAll)="deleteAll($event)"
+        (deleteNotification)="deleteNotificationItem($event)"
+        (readNotification)="readNotificationItem($event)"
+        (refresh)="refresh($event)"
+        (unreadNotification)="unreadNotificationItem($event)"
+        [componentName]="'Notifications'"
+        [count]="count"
+        [dataSource]="dataSource"
+        [pageIndex]="pageIndex"
+        [pageSize]="pageSize"
+        [testLabelValue] = "'notification'"
+        [enableConsultation]="true"
+        >
+</bl-notification>

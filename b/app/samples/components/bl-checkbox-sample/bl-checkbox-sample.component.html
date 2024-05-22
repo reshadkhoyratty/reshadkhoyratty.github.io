@@ -1,0 +1,30 @@
+<h2 class="anchor border-bottom mb-3">Exemple</h2>
+<form [formGroup]="formGroup">
+    <bl-checkbox
+            [formControl]="formGroup.controls.example1"
+            [matToolTip]="'Cette checkBox est grisé'"
+            [testLabelValue]="'checkBox_modifiable'"
+    >
+        {{ 'pages.checkbox.exemple1' | translate }}
+    </bl-checkbox>
+    <br>
+    <bl-checkbox
+            [formControl]="formGroup.controls.example2"
+            [readonly]="true"
+            [testLabelValue]="'checkBox_non_modifiable'"
+            label="check me"
+    >
+        {{ 'pages.checkbox.exemple2' | translate }}
+    </bl-checkbox>
+    <br>
+    <bl-checkbox
+            [readonly]="true"
+            [testLabelValue]="'checkBox_valeur_non_modifiable'"
+            [value]="true"
+            label="check me"
+    >
+        {{ 'pages.checkbox.exemple3' | translate }}
+    </bl-checkbox>
+
+
+</form>

@@ -1,0 +1,19 @@
+<div class="img-picker-sample">
+    <bl-image-with-content *ngIf="selectedImage$ | async as selectedImage"
+                           [floatButonsTopPercentPosition]="'0'"
+                           [floatButtonsLeftPercentPosition]="'85'"
+                           [imageDescription]="selectedImage.title"
+                           [imageSrc]="selectedImage.src"
+                           [imageStyle]="'width: 250px'"
+    class="img-container">
+        <bl-button (click)="openImagePickerGenericDialog(imagesList)"
+                   [iconButton]="true"
+                   [iconClass]="'pencil_fill'"
+                   [primary]="true"
+                   [size]="1"
+                   [testLabelValue]="'selectImage'"
+                   [title]="'pages.variables.image-picker.select-an-image-btn'" class="btn-img">
+        </bl-button>
+
+    </bl-image-with-content>
+</div>

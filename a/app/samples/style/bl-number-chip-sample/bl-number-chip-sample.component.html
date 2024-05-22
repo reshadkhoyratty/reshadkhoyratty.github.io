@@ -1,0 +1,26 @@
+<p> {{'pages.style.number-chip.sample-title1'|translate}}</p>
+
+<div class="inline-block">
+  <div class="title-center">{{'pages.style.number-chip.notif'|translate}} </div>
+  <bl-number-chip [testLabel]="'notif_chip'">8</bl-number-chip>
+</div>
+<p> {{'pages.style.number-chip.sample-title2'|translate}}</p>
+
+<div class="inline-block">
+  <div class="title-center">{{'pages.style.number-chip.folders'|translate}}</div>
+  <bl-number-chip [alignChip]="chipPosition.bottom" [chipColor]="'var(--bl-label-danger)'" [numberColor]="'var(--bl-label-danger-text)'" [testLabel]="'doc_chip'" >12</bl-number-chip>
+</div>
+
+<p>{{'pages.style.number-chip.sample-title3'|translate}}</p>
+
+<div class="inline-block">
+  <div class="title-center">{{'pages.style.number-chip.all-files'|translate}}</div>
+  <bl-number-chip [chipColor]="'var(--bl-label-primary)'" [numberColor]="'var(--bl-label-primary-text)'" [testLabel]="'doc2_chip'">70</bl-number-chip>
+
+  <div [style.margin-inline-start]="'2em'" class="title-center">{{'pages.style.number-chip.archived'|translate}}</div>
+  <bl-number-chip [chipColor]="'var(--bl-label-info)'" [numberColor]="'var(--bl-label-info-text)'" [testLabel]="'doc3_chip'">0</bl-number-chip>
+
+  <div [style.margin-inline-start]="'2em'" class="title-center">{{'pages.style.number-chip.deleted'|translate}}</div>
+  <bl-number-chip  [chipColor]="'var(--bl-label-warning)'" [numberColor]="'var(--bl-label-warning-text)'" [testLabel]="'doc3_chip'">5</bl-number-chip>
+
+</div>

@@ -1,0 +1,49 @@
+<div class="m-2">
+
+  <h3 class="anchor border-bottom bl-zt-h3" id="customComponents">Fonctionnement avec un custom component</h3>
+  <span [innerHTML]= "'pages.form-error.doc.set-up' | translate " class="mat-h3"></span>
+
+  <h3 class="anchor border-bottom mt-4 bl-zt-h3" id="accessibilite">Accessibilité</h3>
+  <span [innerHTML]= "'pages.form-error.doc.access' | translate " class="mat-h3"></span>
+
+  <h3 class="anchor border-bottom bl-zt-h3 mt-4" id="usage">Utilisation</h3>
+  <span [innerHTML]= "'pages.form-error.doc.usage' | translate " class="mat-h3"></span>
+
+    <form [formGroup]="formGroup" class="d-flex flex-column mt-2 col-4">
+      <bl-form-error-display [baseI18N]="formLabels" [displayErrorFields]="!layout.mobile"
+                             [formGroup]="formGroup" and="et" class="mb-1"></bl-form-error-display>
+      <mat-form-field appearance="fill" class="mb-1" [attr.testlabel]="'input1'">
+        <mat-label [attr.testlabel]="'input1' + '_label'">{{formLabels+'firstName' | translate}}</mat-label>
+        <input formControlName="firstName" matInput
+               required testlabel="Prenom_1" [attr.testlabel]="'input1'+ '_input'">
+        <mat-error *ngIf="formGroup.controls['firstName'].hasError('required')" equired testlabel="Prenom_1_required">
+          <em class="ph-warning-circle ph-light mr-2"></em>Le prénom est requis
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="mb-1" [attr.testlabel]="'input2'">
+        <mat-label [attr.testlabel]="'input2' + '_label'">{{'pages.form-error.form.lastName' | translate}}</mat-label>
+        <input formControlName="lastName" matInput
+               required testlabel="Nom_2">
+        <mat-error *ngIf="formGroup.controls['lastName'].hasError('required')" testlabel="Nom_2_required">
+          <em class="ph-warning-circle ph-light mr-2"></em>Le nom est requis
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field appearance="fill" class="mb-1" [attr.testlabel]="'input3'">
+        <mat-label [attr.testlabel]="'input3' + '_label'">{{'pages.form-error.form.email' | translate}}</mat-label>
+        <input formControlName="email" matInput required testlabel="Email_3">
+        <mat-error *ngIf="formGroup.controls['email'].hasError('email')" testlabel="Email_3_format">
+          <em class="ph-warning-circle ph-light mr-2"></em>Veuillez entrer une adresse email
+          valide
+        </mat-error>
+        <mat-error *ngIf="formGroup.controls['email'].hasError('required')" testlabel="Email_3_required">
+          <em class="ph-warning-circle ph-light mr-2"></em>L'email est requis
+        </mat-error>
+      </mat-form-field>
+      <!--Editable Table currently NOT WORKING -->
+      <!--<bl-editable-table class="flex-grow d-flex"
+                         formControlName="table"
+                         [cols]="cols">
+      </bl-editable-table>-->
+    </form>
+
+  </div>

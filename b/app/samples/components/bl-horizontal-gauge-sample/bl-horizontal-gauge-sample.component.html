@@ -1,0 +1,51 @@
+<div>
+  <br/>
+  <bl-horizontal-gauge [left]="'Nombre de jours réalisés'"
+                       [max]="10"
+                       [min]="0"
+                       [right]="'8.5 / 10'"
+                       [testLabelValue]="'horizontal-gauge1'"
+                       [value]="8.5"
+  >
+  </bl-horizontal-gauge>
+  <br/>
+  <bl-horizontal-gauge [left]="'50%'"
+                       [max]="100"
+                       [testLabelValue]="'horizontal-gauge2'"
+                       [value]="50"
+  >
+  </bl-horizontal-gauge>
+  <br/>
+  <bl-horizontal-gauge [left]="'7.5 jours'"
+                       [max]="10"
+                       [right]="'sur 10'"
+                       [testLabelValue]="'horizontal-gauge3'"
+                       [value]="7.5"
+  >
+  </bl-horizontal-gauge>
+  <br/>
+  <bl-horizontal-gauge [left]="'Moyenne'" [max]="10"
+                       [right]="'1.2/10'"
+                       [testLabelValue]="'horizontal-gauge4'"
+                       [value]="1.2"
+                       class="danger"
+  >
+  </bl-horizontal-gauge>
+  <br/>
+  <bl-horizontal-gauge [left]="'<b style=\'color:red\' >Moyenne</b>'" [max]="10"
+                       [right]="'<b>1.2</b>/10'"
+                       [testLabelValue]="'horizontal-gauge4'"
+                       [value]="1.2"
+                       class="danger"
+  >
+  </bl-horizontal-gauge>
+  <br/>
+  <p>{{'sample.horizontal-gauge.with-custom-style' | translate}}</p>
+  <bl-horizontal-gauge [left]="'50%'"
+                       [max]="100"
+                       [styleCss]="'padding:0 16px'"
+                       [testLabelValue]="'horizontal-gauge5'"
+                       [value]="50"
+  >
+  </bl-horizontal-gauge>
+</div>

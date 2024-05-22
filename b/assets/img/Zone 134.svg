@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1631" height="134" viewBox="0 0 1631 134">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_14271" data-name="Rectangle 14271" width="1631" height="134" transform="translate(290 335.306)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Zone_134" data-name="Zone 134" transform="translate(-290 -335.306)" clip-path="url(#clip-path)">
+    <g id="Groupe_13669" data-name="Groupe 13669">
+      <path id="Tracé_2421" data-name="Tracé 2421" d="M8220.947-467.979c92.18,70.016,333.677,343.579,534.329,307.241S9600.293-525,9600.293-525H8179.433S8128.768-537.994,8220.947-467.979Z" transform="translate(-7719.022 -604.594) rotate(8)" fill="#dfddf7" opacity="0.27"/>
+      <path id="Tracé_2422" data-name="Tracé 2422" d="M8220.947-467.979c92.18,70.016,333.677,343.579,534.329,307.241S9600.293-525,9600.293-525H8179.433S8128.768-537.994,8220.947-467.979Z" transform="translate(-7642.022 -591.594) rotate(8)" fill="#dfddf7" opacity="0.27"/>
+      <path id="Tracé_2423" data-name="Tracé 2423" d="M8220.947-467.979c92.18,70.016,333.677,343.579,534.329,307.241S9600.293-525,9600.293-525H8179.433S8128.768-537.994,8220.947-467.979Z" transform="translate(-7810.022 -615.594) rotate(8)" fill="#dfddf7" opacity="0.27"/>
+    </g>
+  </g>
+</svg>

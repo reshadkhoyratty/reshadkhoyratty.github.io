@@ -1,0 +1,36 @@
+<form [formGroup]="formGroup">
+  <p>{{'sample.code.with' | translate}}</p>
+  <bl-list-box-statut [addNullableOption]="true"
+                      [displayCode]="false"
+                      [formControl]="formGroup.controls.status1"
+                      [testLabelValue]="'listbox_withcode'"
+                      id="statut1"
+  ></bl-list-box-statut>
+  <p>{{'sample.code.without' | translate}}</p>
+  <bl-list-box-statut [addNullableOption]="true"
+                      [displayCode]="false" [formControl]="formGroup.controls.status2"
+                      [testLabelValue]="'listbox_withoutcode'"
+                      id="statut2"
+  ></bl-list-box-statut>
+  <p>{{'sample.libelle.read-only' | translate}}</p>
+  <bl-list-box-statut [addNullableOption]="true"
+                      [displayCode]="false" [formControl]="formGroup.controls.status3"
+                      [readOnly]="true"
+                      [testLabelValue]="'listbox_withReadOnly'"
+                      id="statut3"
+  ></bl-list-box-statut>
+  <p>{{'sample.libelle.empty' | translate}}</p>
+  <bl-list-box-statut [addNullableOption]="true"
+                      [displayCode]="false" [formControl]="formGroup.controls.status4"
+                      [lstVide]="true"
+                      [testLabelValue]="'listbox_empty'"
+                      id="statut4"
+  ></bl-list-box-statut>
+  <p>{{'sample.libelle.disabled' | translate}}</p>
+  <bl-list-box-statut-with-disabled [addNullableOption]="true"
+                      [displayCode]="false"
+                      [formControl]="formGroup.controls.status5"
+                      [testLabelValue]="'listbox_with_disabled_values'"
+                      id="statut5"
+  ></bl-list-box-statut-with-disabled>
+</form>

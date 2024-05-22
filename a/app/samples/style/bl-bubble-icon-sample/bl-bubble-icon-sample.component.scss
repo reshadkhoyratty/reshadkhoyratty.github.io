@@ -1,0 +1,25 @@
+.flex-example{
+  display: flex;
+width: 60%;
+  margin: 14px 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-container {
+width: 60%;
+  margin-top: 17px;
+}
+
+.center-item{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.middle-items{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.item{
+  margin-left: 30px;
+}

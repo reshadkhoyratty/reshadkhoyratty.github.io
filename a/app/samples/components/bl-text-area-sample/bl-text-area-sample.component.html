@@ -1,0 +1,30 @@
+<h2>Description</h2>
+<p>{{'pages.text-area.declaration' |translate}}</p>
+<form [formGroup]="formGroup">
+  <bl-text-area [formControl]="formGroup.controls.label2"
+                [label]="thirdExample" [required]="true"
+                [widthTextArea]="'50%'"
+                [matHintEnd]="'matHintEnd'"
+                [matHintStart]="'La modification de la taille :[WidthTextArea] '"
+                [testLabelValue]="'text_area_1'"
+                [heightTextArea]="'50px'"
+  >
+  </bl-text-area>
+
+  <bl-text-area
+           [formControl]="formGroup.controls.label1"
+           [label]="secondExample"
+           [widthTextArea]="'30%'"
+           [calculateMaxLength]="true"
+           [matHintStart]="'calculateMaxLength=true'"
+           [testLabelValue]="'text_area_2'"
+           [heightTextArea]="'30px'"
+           >
+  </bl-text-area>
+  <bl-text-area  [formControl]="formGroup.controls.label3"
+                 [label]="firstExample"
+                 [readOnly]="true"
+                 [testLabelValue]="'text_area_3'"
+                 >
+  </bl-text-area>
+</form>

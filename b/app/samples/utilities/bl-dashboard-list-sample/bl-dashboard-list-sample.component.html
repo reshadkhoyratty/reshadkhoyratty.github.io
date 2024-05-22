@@ -1,0 +1,47 @@
+<bl-dashboard-list
+  [data]="routingModeData"
+  [headerActionButton]="searchButon"
+  [cardWidth]="16"
+></bl-dashboard-list>
+<br />
+<p>{{ 'pages.dashboard-list.first-example' | translate }}</p>
+
+<bl-dashboard-list
+  [data]="routingModeData"
+  [headerActionButton]="searchButon"
+  [cardWidth]="16"
+  [displayHeaderActionButton]="false"
+></bl-dashboard-list>
+<br />
+<p>{{ 'pages.dashboard-list.second-example' | translate }}</p>
+
+<bl-dashboard-list
+  [data]="routingModeDataV2"
+  [headerActionButton]="searchButon"
+  [cardWidth]="16"
+  [enableSearch]="false"
+  [displayUserIcon]="false"
+  [enableDividerBetweenRows]="true"
+></bl-dashboard-list>
+
+<br />
+<p>{{ 'pages.dashboard-list.third-example' | translate }}</p>
+<bl-dashboard-list
+  [data]="routingModeData"
+  [headerActionButton]="searchButon"
+  [enableSearch]="true"
+  [displayUserIcon]="false"
+></bl-dashboard-list>
+
+<br />
+<p>{{ 'pages.dashboard-list.last-example' | translate }}</p>
+<!-- Don't forget to disable routingMode and define rowClick event -->
+<bl-dashboard-list
+  [routingMode]="false"
+  [enableDividerBetweenRows]="true"
+  (rowClick)="handleRowClick($event)"
+  [headerActionButton]="searchButon"
+  [data]="eventData"
+  [enableSearch]="true"
+  [displayUserIcon]="true"
+></bl-dashboard-list>

@@ -1,0 +1,24 @@
+<bl-generic-dialog
+        #dialog
+        (cancelEvent)="event('cancel')"
+        (noEvent)="event('no')"
+        (yesEvent)="event('yes')"
+        [validation]="validateForm"
+>
+
+  <div bl-generic-dialog__content>
+      {{dialog.dialogConfig.data}}
+      <br>
+      <br>
+      {{message}}
+
+      <form [formGroup]="formGroup">
+          <bl-text-field-decimal [formControl]="formGroup.controls.label1"
+                         [id]="'1'"
+                         [label]="'sample.generic-dialog.label'|translate"
+                         [placeholder]="'sample.generic-dialog.placeholder'|translate"
+                         [testLabelValue]="'input_1'">
+          </bl-text-field-decimal>
+      </form>
+  </div>
+</bl-generic-dialog>

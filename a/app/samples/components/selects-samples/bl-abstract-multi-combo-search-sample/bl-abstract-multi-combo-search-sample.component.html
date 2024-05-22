@@ -1,0 +1,23 @@
+<form [formGroup]="formGroup">
+    <p>{{'sample.code.with' | translate}}</p>
+    <bl-multi-combo-search-statut [displayCode]="true"
+                  [formControl]="formGroup.controls.status1"
+                  id="statut1"
+                  [testLabelValue]="'multicombo_with_code'"
+    ></bl-multi-combo-search-statut>
+    <p>{{'sample.code.without' | translate}}</p>
+    <bl-multi-combo-search-statut [displayCode]="false"
+                  [formControl]="formGroup.controls.status2"
+                  id="statut2"
+                  [testLabelValue]="'multicombo_without_code'"
+    ></bl-multi-combo-search-statut>
+    <p>{{'sample.libelle.read-only' | translate}}</p>
+    <bl-multi-combo-search-statut [displayCode]="false"
+                           [formControl]="formGroup.controls.status3"
+                           [readOnly]="true"
+                           id="statut3"
+                           [testLabelValue]="'multicombo_with_readOnly'"
+    ></bl-multi-combo-search-statut>
+</form>
+
+
